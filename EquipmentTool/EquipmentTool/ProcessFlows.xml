@@ -1,0 +1,6531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProcessFlows>
+  <Process Name='Flow_ASM838'>   <!-- For  ASM838-->
+
+    <WaferID>C-7537797-01-A3</WaferID>
+    <StripRow>8</StripRow>
+    <StripCol>20</StripCol>
+     <!-- <Strips> -->
+	<!-- Q1211251,Q1211252,Q1211253,Q1211254,Q1211255,Q1211256,Q1211257,Q1211258,Q1211259,Q1211260,Q1211261,Q1211262 -->
+	<!-- </Strips> -->
+    <!--Strips>X10000351,X10000352,X10000353,X10000354,X10000355,X10000356,X10000357,X10000358,X10000359,X10000360</Strips-->
+    <Strips>
+      T10001251,T10001252,T10001253,T10001254,T10001255,T10001256,T10001257,T10001258,T10001259,T10001260,
+      T10001261,T10001262,T10001263,T10001264,T10001265,T10001266,T10001267,T10001268,T10001269,T10001270,
+      T10001271,T10001272,T10001273,T10001274,T10001275,T10001276,T10001277,T10001278,T10001279,T10001280,
+      T10001281,T10001282,T10001283,T10001284,T10001285,T10001286,T10001287,T10001288,T10001289,T10001290,
+      T10011251,T10011252,T10011253,T10011254,T10011255,T10011256,T10011257,T10011258,T10011259,T10011260,
+      T10011261,T10011262,T10011263,T10011264,T10011265,T10011266,T10011267,T10011268,T10011269,T10011270,
+      T10011271,T10011272,T10011273,T10011274,T10011275,T10011276,T10011277,T10011278,T10011279,T10011280,
+      T10011281,T10011282,T10011283,T10011284,T10011285,T10011286,T10011287,T10011288,T10011289,T10011290
+    </Strips>
+
+    <!-- waferLoaded,ReadStripID,StripProceeStart,ReadStripID,oneStripBonding,StripProceeEnd,StripMapUpload,StripMapDownload /-->
+	  
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>    
+
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    
+
+    <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    
+    <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+ 
+    <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+ 
+    <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+
+    <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+  
+    <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+
+    <behavior>
+      <StripID>11</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>11</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+
+    <behavior>
+      <StripID>12</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>11</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+   
+    <behavior>
+      <StripID>13</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+	   <behavior>
+      <StripID>12</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>12</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>13</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+
+    
+    <behavior>
+      <StripID>14</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>13</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>14</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>15</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>14</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>15</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+
+    <behavior>
+      <StripID>16</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>15</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>16</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+ 
+    <behavior>
+      <StripID>17</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>16</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>17</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>18</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>17</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>18</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+
+    <behavior>
+      <StripID>19</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>18</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>19</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+  
+
+    <behavior>
+      <StripID>20</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>19</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>20</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+   
+    <behavior>
+      <StripID>21</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>20</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>21</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+   
+    <behavior>
+      <StripID>22</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>21</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>22</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+   
+    <behavior>
+      <StripID>23</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>22</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>23</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+        
+    <behavior>
+      <StripID>24</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>23</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>24</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>25</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>24</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>25</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>26</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>	
+	
+    <behavior>
+      <StripID>25</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>26</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>27</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>	
+	
+    <behavior>
+      <StripID>26</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>27</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+	<behavior>
+      <StripID>28</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>27</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>28</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>28</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>29</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>29</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>29</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>30</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>30</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>30</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>31</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	    <behavior>
+      <StripID>31</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>31</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>32</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>32</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>32</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>33</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	    <behavior>
+      <StripID>33</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>33</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>34</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>34</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>34</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>35</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>35</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>35</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>36</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>36</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>36</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>37</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>37</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>37</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>38</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>38</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>38</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>39</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>39</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>39</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>40</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	
+	  <behavior>
+      <StripID>40</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>40</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>41</StripID>
+      <StripBehavior>StripProceeStart</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>41</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+
+      <StripID>41</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>42</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>42</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>43</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>43</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>41</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>42</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>43</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>44</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>44</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>44</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>45</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>45</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>45</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>46</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>46</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>46</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>47</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>47</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>47</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>48</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>48</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>48</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>49</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>49</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>49</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>50</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>50</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>51</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>50</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+   <behavior>
+      <StripID>61</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>51</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>52</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>52</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>52</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>53</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>53</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>54</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>53</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>54</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	
+	    <behavior>
+      <StripID>54</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>55</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>55</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>55</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>56</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>56</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>56</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>57</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	    <behavior>
+      <StripID>57</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>57</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>58</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+	
+	    <behavior>
+      <StripID>58</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	
+    </behavior>
+    <behavior>
+      <StripID>58</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>59</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	    <behavior>
+      <StripID>59</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>59</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>60</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>60</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>60</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>61</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>61</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>61</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>62</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	    <behavior>
+      <StripID>62</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>62</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>63</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>63</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>63</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>64</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	    <behavior>
+      <StripID>64</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>64</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>65</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	    <behavior>
+      <StripID>65</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>65</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>66</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	    <behavior>
+      <StripID>66</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>66</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>67</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	    <behavior>
+      <StripID>67</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>67</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>68</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	    <behavior>
+      <StripID>68</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>68</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>69</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>69</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>69</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>70</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	    <behavior>
+      <StripID>70</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>70</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>71</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	    <behavior>
+      <StripID>71</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>71</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>72</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	  <behavior>
+      <StripID>72</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>72</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>73</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	  <behavior>
+      <StripID>73</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>73</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>74</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	  <behavior>
+      <StripID>74</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>74</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>75</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>75</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>75</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>76</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>76</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>77</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>76</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>77</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>77</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>78</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>78</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>78</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>79</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>79</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>80</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>79</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>80</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>80</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+    <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+  </Process>
+ <Process Name='Flow_ASM_838_DB02'>  <!--ASM 838 DB02-->
+ 
+	<WaferID>C-7537797-01-A3</WaferID>
+    <StripRow>10</StripRow>
+    <StripCol>30</StripCol>
+    <Strips>B10002251,B10002252,B10002253,B10002254,B10002255,B10002256,B10002257,B10002258,B10002259,B10002260,B10002261,B10002262</Strips>
+  
+ <!--    <Strips>
+      F10001251,F10001252,F10001253,F10001254,F10001255,F10001256,F10001257,F10001258,F10001259,F10001260,
+      F10001261,F10001262,F10001263,F10001264,F10001265,F10001266,F10001267,F10001268,F10001269,F10001270,
+      F10001271,F10001272,F10001273,F10001274,F10001275,F10001276,F10001277,F10001278,F10001279,F10001280,
+      F10001281,F10001282,F10001283,F10001284,F10001285,F10001286,F10001287,F10001288,F10001289,F10001290
+      F10011251,F10011252,F10011253,F10011254,F10011255,F10011256,F10011257,F10011258,F10011259,F10011260,
+      F10011261,F10011262,F10011263,F10011264,F10011265,F10011266,F10011267,F10011268,F10011269,F10011270,
+      F10011271,F10011272,F10011273,F10011274,F10011275,F10011276,F10011277,F10011278,F10011279,F10011280,
+      F10011281,F10011282,F10011283,F10011284,F10011285,F10011286,F10011287,F10011288,F10011289,F10011290
+    </Strips> -->
+	
+	<!-- <Strips>
+		 Z1211251,Z1211252,Z1211253,Z1211254,Z1211255,Z1211256,Z1211257,Z1211258,Z1211259,Z1211260,
+		  Z1211261,Z1211262,Z1211263,Z1211264,Z1211265,Z1211266,Z1211267,Z1211268,Z1211269,Z1211270,
+		  Z1211271,Z1211272,Z1211273,Z1211274,Z1211275,Z1211276,Z1211277,Z1211278,Z1211279,Z1211280,
+		  Z1211281,Z1211282,Z1211283,Z1211284,Z1211285,Z1211286,Z1211287,Z1211288,Z1211289,Z1211290
+		  Z2211251,Z2211252,Z2211253,Z2211254,Z2211255,Z2211256,Z2211257,Z2211258,Z2211259,Z2211260,
+		  Z2211261,Z2211262,Z2211263,Z2211264,Z2211265,Z2211266,Z2211267,Z2211268,Z2211269,Z2211270,
+		  Z2211271,Z2211272,Z2211273,Z2211274,Z2211275,Z2211276,Z2211277,Z2211278,Z2211279,Z2211280,
+		  Z2211281,Z2211282,Z2211283,Z2211284,Z2211285,Z2211286,Z2211287,Z2211288,Z2211289,Z2211290
+	</Strips> -->
+    <!-- waferLoaded,StripMapDownload,StripProceeStart,ReadStripID,oneStripBonding,StripProceeEnd,StripMapUpload /-->
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>StripProceeStart</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>11</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>11</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>11</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>12</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>11</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>12</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>13</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>13</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>13</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>14</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>14</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>14</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>15</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>15</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>15</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>16</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>16</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>16</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>17</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>17</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>17</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>18</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>18</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>18</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>19</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>19</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>19</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>20</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>20</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>20</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>21</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>21</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>21</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>22</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>22</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>22</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>23</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>23</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>23</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>24</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>24</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>24</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>25</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>25</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>25</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>26</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>26</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>26</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>27</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>27</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>27</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>28</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>28</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>28</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>29</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>29</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>29</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>30</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>30</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>30</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>31</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>31</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>32</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>32</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>32</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>33</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>33</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>34</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>34</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>34</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>35</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>35</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>35</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>36</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>36</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>37</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>37</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>38</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>38</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>38</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>39</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>39</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>39</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>40</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>40</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>41</StripID>
+      <StripBehavior>StripProceeStart</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>41</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+
+      <StripID>41</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>42</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>42</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>43</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>43</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>41</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>42</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>43</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>44</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>44</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>44</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>45</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>45</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>45</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>46</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>46</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>46</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>47</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>47</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>47</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>48</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>48</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>48</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>49</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>49</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>49</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>50</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>50</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>51</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>50</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>51</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>52</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>52</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>52</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>53</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>53</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>54</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>53</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>54</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>55</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>55</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>55</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>56</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>56</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>56</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>57</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>57</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>58</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>58</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>59</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>59</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>60</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>60</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>60</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>61</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>61</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>61</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>62</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>62</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>63</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>63</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>63</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>64</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>64</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>65</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>65</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>66</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>66</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>67</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>67</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>68</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>68</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>69</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>69</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>69</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>70</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>70</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>71</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>71</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>72</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>72</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>73</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>73</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>74</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>74</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>75</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>75</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>75</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>76</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>76</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>77</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>76</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>77</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>77</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>78</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>78</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>78</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>79</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>79</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>80</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>79</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>80</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>80</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+  </Process>
+  <Process Name='Flow_ESES_2008'>  <!-- For ESES 2008 DB02-->
+   
+    <!--ProceeStart/ReadStripIDRequest/oneStripBonding/PickLogging-->
+
+    <WaferID>C-7537797-01-A3</WaferID>
+    <StripRow>5</StripRow>
+    <StripCol>10</StripCol>
+    <!--Strips>A3001251,A3001252,A3001253</Strips-->
+    <!--Strips>X10000351,X10000352,X10000353,X10000354,X10000355,X10000356,X10000357,X10000358,X10000359,X10000360</Strips-->
+    <Strips>
+      F10001251,F10001252,F10001253,F10001254,F10001255,F10001256,F10001257,F10001258,F10001259,F10001260,
+      F10001261,F10001262,F10001263,F10001264,F10001265,F10001266,F10001267,F10001268,F10001269,F10001270,
+      F10001271,F10001272,F10001273,F10001274,F10001275,F10001276,F10001277,F10001278,F10001279,F10001280,
+      F10001281,F10001282,F10001283,F10001284,F10001285,F10001286,F10001287,F10001288,F10001289,F10001290
+      F10011251,F10011252,F10011253,F10011254,F10011255,F10011256,F10011257,F10011258,F10011259,F10011260,
+      F10011261,F10011262,F10011263,F10011264,F10011265,F10011266,F10011267,F10011268,F10011269,F10011270,
+      F10011271,F10011272,F10011273,F10011274,F10011275,F10011276,F10011277,F10011278,F10011279,F10011280,
+      F10011281,F10011282,F10011283,F10011284,F10011285,F10011286,F10011287,F10011288,F10011289,F10011290
+    </Strips>
+
+    <!-- ProceeStart，ReadStripIDRequest,oneStripBonding /-->
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>LeadFrameArrival_Down</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>LeadFrameArrival_Down</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>LeadFrameArrival_Down</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>LeadFrameArrival_Down</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>LeadFrameArrival_Down</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>LeadFrameArrival_Down</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>11</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>11</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>12</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>12</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>13</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>13</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>14</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>14</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>15</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>15</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>16</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>16</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>17</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>17</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>18</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>18</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>19</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>19</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>20</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>20</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>21</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>21</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>22</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>22</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>23</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>23</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>24</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>24</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>25</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>25</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>26</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>26</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>27</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>27</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>28</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>28</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>29</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>29</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>30</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>30</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>31</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>31</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>32</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>32</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>33</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>33</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>34</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>34</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>35</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>35</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>36</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>36</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>37</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>37</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>38</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>38</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>39</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>39</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>40</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>40</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+
+    <behavior>
+      <StripID>41</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+
+      <StripID>41</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>42</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>42</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>43</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>43</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>44</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>44</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>45</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>45</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>46</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>46</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>47</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>47</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>48</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>48</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>49</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>49</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>50</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>50</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>51</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>51</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>52</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>52</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>53</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>53</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>54</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>54</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>55</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>55</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>56</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>56</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>57</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>57</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>58</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>58</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>59</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>59</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>60</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>60</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>61</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>61</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>62</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>62</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>63</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>63</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>64</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>64</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>65</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>65</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>66</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>66</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>67</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>67</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>68</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>68</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>69</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>69</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>70</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>70</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>71</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>71</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>72</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>72</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>73</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>73</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>74</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>74</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>75</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>75</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>76</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>76</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>77</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>77</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>78</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>78</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>79</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>79</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>80</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>80</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+  </Process>
+ <Process Name='Flow_ESES_2008 DB02'>  <!-- For ESES 2008-->
+   
+    <!--ProceeStart/ReadStripIDRequest/oneStripBonding/PickLogging-->
+
+    <WaferID>C-7537797-01-A3</WaferID>
+    <StripRow>10</StripRow>
+    <StripCol>30</StripCol>
+    <!--Strips>A3001251,A3001252,A3001253</Strips-->
+    <!--Strips>X10000351,X10000352,X10000353,X10000354,X10000355,X10000356,X10000357,X10000358,X10000359,X10000360</Strips-->
+    <Strips>B10002251,B10002252,B10002253,B10002254,B10002255,B10002256,B10002257,B10002258,B10002259,B10002260,B10002261,B10002262
+    </Strips>
+
+    <!-- ProceeStart，ReadStripIDRequest,oneStripBonding /-->
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>LeadFrameArrival_Down</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>LeadFrameArrival_Down</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>LeadFrameArrival_Down</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>LeadFrameArrival_Down</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>LeadFrameArrival_Down</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>LeadFrameArrival_Down</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>11</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>11</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>12</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>12</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>13</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>13</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>14</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>14</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>15</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>15</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>16</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>16</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>17</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>17</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>18</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>18</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>19</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>19</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>20</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>20</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>21</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>21</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>22</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>22</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>23</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>23</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>24</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>24</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>25</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>25</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>26</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>26</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>27</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>27</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>28</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>28</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>29</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>29</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>30</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>30</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>31</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>31</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>32</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>32</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>33</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>33</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>34</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>34</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>35</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>35</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>36</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>36</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>37</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>37</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>38</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>38</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>39</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>39</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>40</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>40</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+
+    <behavior>
+      <StripID>41</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+
+      <StripID>41</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>42</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>42</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>43</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>43</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>44</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>44</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>45</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>45</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>46</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>46</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>47</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>47</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>48</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>48</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>49</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>49</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>50</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>50</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>51</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>51</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>52</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>52</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>53</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>53</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>54</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>54</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>55</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>55</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>56</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>56</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>57</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>57</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>58</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>58</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>59</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>59</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>60</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>60</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>61</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>61</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>62</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>62</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>63</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>63</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>64</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>64</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>65</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>65</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>66</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>66</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>67</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>67</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>68</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>68</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>69</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>69</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>70</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>70</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>71</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>71</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>72</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>72</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>73</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>73</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>74</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>74</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>75</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>75</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>76</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>76</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>77</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>77</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>78</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>78</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>79</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>79</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>80</StripID>
+      <StripBehavior>ReadStripIDRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>80</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+  </Process>
+  
+  <Process Name='Flow_FC9212_DB01'> <!-- for FC9212  DB01 -->
+    
+    <WaferID>C-7537797-01-A3</WaferID>
+    <StripRow>8</StripRow>
+    <StripCol>20</StripCol>
+    <!--<Strips>H130171,H130172,H130173,H130174,H130175,H130176,H130177,H130178,H130179,H130180</Strips>-->
+    
+     <Strips>
+      F10001251,F10001252,F10001253,F10001254,F10001255,F10001256,F10001257,F10001258,F10001259,F10001260,
+      F10001261,F10001262,F10001263,F10001264,F10001265,F10001266,F10001267,F10001268,F10001269,F10001270,
+      F10001271,F10001272,F10001273,F10001274,F10001275,F10001276,F10001277,F10001278,F10001279,F10001280,
+      F10001281,F10001282,F10001283,F10001284,F10001285,F10001286,F10001287,F10001288,F10001289,F10001290,
+      F10011251,F10011252,F10011253,F10011254,F10011255,F10011256,F10011257,F10011258,F10011259,F10011260,
+      F10011261,F10011262,F10011263,F10011264,F10011265,F10011266,F10011267,F10011268,F10011269,F10011270,
+      F10011271,F10011272,F10011273,F10011274,F10011275,F10011276,F10011277,F10011278,F10011279,F10011280,
+      F10011281,F10011282,F10011283,F10011284,F10011285,F10011286,F10011287,F10011288,F10011289,F10011290
+    </Strips>
+
+    <!-- <Strips>
+		 Z1211251,Z1211252,Z1211253,Z1211254,Z1211255,Z1211256,Z1211257,Z1211258,Z1211259,Z1211260,
+		  Z1211261,Z1211262,Z1211263,Z1211264,Z1211265,Z1211266,Z1211267,Z1211268,Z1211269,Z1211270,
+		  Z1211271,Z1211272,Z1211273,Z1211274,Z1211275,Z1211276,Z1211277,Z1211278,Z1211279,Z1211280,
+		  Z1211281,Z1211282,Z1211283,Z1211284,Z1211285,Z1211286,Z1211287,Z1211288,Z1211289,Z1211290
+		  Z2211251,Z2211252,Z2211253,Z2211254,Z2211255,Z2211256,Z2211257,Z2211258,Z2211259,Z2211260,
+		  Z2211261,Z2211262,Z2211263,Z2211264,Z2211265,Z2211266,Z2211267,Z2211268,Z2211269,Z2211270,
+		  Z2211271,Z2211272,Z2211273,Z2211274,Z2211275,Z2211276,Z2211277,Z2211278,Z2211279,Z2211280,
+		  Z2211281,Z2211282,Z2211283,Z2211284,Z2211285,Z2211286,Z2211287,Z2211288,Z2211289,Z2211290
+	</Strips> -->
+    <!-- waferLoaded,StripMapDownload,StripMapUploadFromFileFromFile /-->
+
+	  
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+	
+	
+    <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+	
+	 <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+	
+	 <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+     <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+   <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+	
+	 <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+ 
+ 
+    <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+   <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+	 <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+	
+	 <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+    
+ 
+    <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+   <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+	
+	 <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+	
+  </Process>
+  <Process Name='Flow_FC9212_DB02'> <!-- for FC9212  DB02 -->
+    
+    <WaferID>C-7537797-01-A3</WaferID>
+    <StripRow>10</StripRow>
+    <StripCol>30</StripCol>
+    <!--<Strips>H130171,H130172,H130173,H130174,H130175,H130176,H130177,H130178,H130179,H130180</Strips>-->
+    
+     <Strips>
+      B10002251,B10002252,B10002253,B10002254,B10002255,B10002256,B10002257,B10002258,B10002259,B10002260,B10002261,B10002262
+    </Strips>
+
+    <!-- <Strips>
+		 Z1211251,Z1211252,Z1211253,Z1211254,Z1211255,Z1211256,Z1211257,Z1211258,Z1211259,Z1211260,
+		  Z1211261,Z1211262,Z1211263,Z1211264,Z1211265,Z1211266,Z1211267,Z1211268,Z1211269,Z1211270,
+		  Z1211271,Z1211272,Z1211273,Z1211274,Z1211275,Z1211276,Z1211277,Z1211278,Z1211279,Z1211280,
+		  Z1211281,Z1211282,Z1211283,Z1211284,Z1211285,Z1211286,Z1211287,Z1211288,Z1211289,Z1211290
+		  Z2211251,Z2211252,Z2211253,Z2211254,Z2211255,Z2211256,Z2211257,Z2211258,Z2211259,Z2211260,
+		  Z2211261,Z2211262,Z2211263,Z2211264,Z2211265,Z2211266,Z2211267,Z2211268,Z2211269,Z2211270,
+		  Z2211271,Z2211272,Z2211273,Z2211274,Z2211275,Z2211276,Z2211277,Z2211278,Z2211279,Z2211280,
+		  Z2211281,Z2211282,Z2211283,Z2211284,Z2211285,Z2211286,Z2211287,Z2211288,Z2211289,Z2211290
+	</Strips> -->
+    <!-- waferLoaded,StripMapDownload,StripMapUploadFromFileFromFile /-->
+
+	   <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>ClearAllDateRequest</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>5000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+	
+	
+    <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+	
+	 <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+	
+	 <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+     <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+
+    <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+   <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+	
+	 <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+ 
+ 
+    <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+   <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+	 <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+	
+	 <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+    
+ 
+    <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+   <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+	
+	 <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+	
+	 <behavior>
+      <StripID>11</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>12</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+   <behavior>
+      <StripID>11</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>11</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>11</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+	
+	 <behavior>
+      <StripID>12</StripID>
+      <StripBehavior>ProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>12</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+	 <behavior>
+      <StripID>12</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+  </Process>
+  <Process Name='Flow_WB_KNS'>   <!-- For WB -->
+    <WaferID>C-7537797-03-F1</WaferID>
+    <StripRow>10</StripRow>
+    <StripCol>30</StripCol>
+    <!--Strips>A3001251,A3001252,A3001253</Strips-->
+    <!--Strips>X10000351,X10000352,X10000353,X10000354,X10000355,X10000356,X10000357,X10000358,X10000359,X10000360</Strips-->
+ <!--    <Strips>
+      F10001251,F10001252,F10001253,F10001254,F10001255,F10001256,F10001257,F10001258,F10001259,F10001260,
+      F10001261,F10001262,F10001263,F10001264,F10001265,F10001266,F10001267,F10001268,F10001269,F10001270,
+      F10001271,F10001272,F10001273,F10001274,F10001275,F10001276,F10001277,F10001278,F10001279,F10001280,
+      F10001281,F10001282,F10001283,F10001284,F10001285,F10001286,F10001287,F10001288,F10001289,F10001290
+      F10011251,F10011252,F10011253,F10011254,F10011255,F10011256,F10011257,F10011258,F10011259,F10011260,
+      F10011261,F10011262,F10011263,F10011264,F10011265,F10011266,F10011267,F10011268,F10011269,F10011270,
+      F10011271,F10011272,F10011273,F10011274,F10011275,F10011276,F10011277,F10011278,F10011279,F10011280,
+      F10011281,F10011282,F10011283,F10011284,F10011285,F10011286,F10011287,F10011288,F10011289,F10011290
+    </Strips> -->
+	
+	<Strips>
+		 S3000251,S3000252,S3000253,S3000254,S3000255,S3000256,S3000257,S3000258,S3000259,S3000260,
+		 S3000261,S3000262,S3000263,S3000264,S3000265,S3000266,S3000267,S3000268,S3000269,S3000270,
+		 S3000271,S3000272,S3000273,S3000274,S3000275,S3000276,S3000277,S3000278,S3000279,S3000280,
+		 S3000281,S3000282,S3000283,S3000284,S3000285,S3000286,S3000287,S3000288,S3000289,S3000290
+	</Strips>
+    <!-- waferLoaded,StripMapDownload,StripProceeStart,ReadStripID,oneStripBonding,StripProceeEnd,StripMapUpload /-->
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>StripProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+	
+   <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>1</TimeDelayMs>
+    </behavior>
+ 
+ 
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>10000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>1</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+   
+    <behavior>
+      <StripID>2</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>3</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>4</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+  
+  <behavior>
+      <StripID>5</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>6</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>7</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+  
+    <behavior>
+      <StripID>8</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>9</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>10</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>11</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+  
+    <behavior>
+      <StripID>11</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>12</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>12</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>13</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>13</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>14</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>14</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>15</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+   
+    <behavior>
+      <StripID>15</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>16</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+   
+    <behavior>
+      <StripID>16</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>17</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+   
+    <behavior>
+      <StripID>17</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>18</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>18</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>19</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+   
+    <behavior>
+      <StripID>19</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>20</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+ 
+    <behavior>
+      <StripID>20</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>21</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>21</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>22</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+  
+    <behavior>
+      <StripID>22</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>23</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+  
+    <behavior>
+      <StripID>23</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>24</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>24</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>25</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>25</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>26</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>26</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>27</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+  
+    <behavior>
+      <StripID>27</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>28</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    
+    <behavior>
+      <StripID>28</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>29</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+   
+    <behavior>
+      <StripID>29</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>30</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+   
+    <behavior>
+      <StripID>30</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>31</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>31</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>32</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+  
+    <behavior>
+      <StripID>32</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>33</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>33</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>34</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>34</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>34</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>35</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+   
+    <behavior>
+      <StripID>35</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>36</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>36</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>37</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>37</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>38</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>38</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>38</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>39</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+   
+
+    <behavior>
+      <StripID>39</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>40</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>40</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>41</StripID>
+      <StripBehavior>StripProceeStart</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>41</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+        
+    <behavior>
+      <StripID>42</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>43</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>43</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>41</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>42</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>43</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>44</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>44</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>45</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>45</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>46</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    
+    <behavior>
+      <StripID>46</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>47</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>47</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>48</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+   
+
+    <behavior>
+      <StripID>48</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>49</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>49</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>49</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>50</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>50</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>51</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>50</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>51</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>52</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>52</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>52</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>53</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>53</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>54</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>53</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>54</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>55</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>55</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>55</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>56</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>56</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>56</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>57</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>57</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>58</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>58</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>59</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>59</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>60</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>60</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>60</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>61</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>61</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>61</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>62</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>62</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>63</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>63</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>63</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>64</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>64</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>65</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>65</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>66</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>66</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>67</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>67</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>68</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>68</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>69</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>69</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>69</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>70</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>70</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>71</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>71</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>72</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>72</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>73</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>73</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>74</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>74</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>75</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>75</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>75</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>76</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+    <behavior>
+      <StripID>76</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>77</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>76</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>77</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>77</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>78</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>78</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+
+    <behavior>
+      <StripID>78</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+	
+    <behavior>
+      <StripID>79</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>79</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>80</StripID>
+      <StripBehavior>StripMapDownload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>79</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>80</StripID>
+      <StripBehavior>oneStripBonding</StripBehavior>
+      <TimeDelayMs>2000</TimeDelayMs>
+    </behavior>
+
+    <behavior>
+      <StripID>80</StripID>
+      <StripBehavior>StripMapUpload</StripBehavior>
+      <TimeDelayMs>3000</TimeDelayMs>
+    </behavior>
+	
+  </Process> 
+  </ProcessFlows>

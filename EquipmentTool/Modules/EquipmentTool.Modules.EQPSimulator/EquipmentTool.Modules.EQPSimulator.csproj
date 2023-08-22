@@ -1,0 +1,266 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Assets\Images\uxAbout.Image.png" />
+    <None Remove="Assets\Images\uxAdd.Image.png" />
+    <None Remove="Assets\Images\uxAutoRunner.Image.png" />
+    <None Remove="Assets\Images\uxBrowse.Image.png" />
+    <None Remove="Assets\Images\uxBrowseWrite.Image.png" />
+    <None Remove="Assets\Images\uxCancel.Image.png" />
+    <None Remove="Assets\Images\uxCollapseMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxConfig.Image.png" />
+    <None Remove="Assets\Images\uxConnect.Image.png" />
+    <None Remove="Assets\Images\uxCopy.Image.png" />
+    <None Remove="Assets\Images\uxCopyMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxCut.Image.png" />
+    <None Remove="Assets\Images\uxCutMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxDelete.Image.png" />
+    <None Remove="Assets\Images\uxDeleteMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxDetailMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxDisconnect.Image.png" />
+    <None Remove="Assets\Images\uxDown.Image.png" />
+    <None Remove="Assets\Images\uxDuplicateMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxEdit.Image.png" />
+    <None Remove="Assets\Images\uxEditMapping.Image.gif" />
+    <None Remove="Assets\Images\uxEventClearMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxExit.Image.png" />
+    <None Remove="Assets\Images\uxExpandMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxHelp.Image.png" />
+    <None Remove="Assets\Images\uxHexToDec.Image.png" />
+    <None Remove="Assets\Images\uxLoad.Image.png" />
+    <None Remove="Assets\Images\uxMonitorClearMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxMoveBottom.Image.png" />
+    <None Remove="Assets\Images\uxMoveBottomMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxMoveDown.Image.png" />
+    <None Remove="Assets\Images\uxMoveDownMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxMoveTop.Image.png" />
+    <None Remove="Assets\Images\uxMoveTopMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxMoveUp.Image.png" />
+    <None Remove="Assets\Images\uxMoveUpMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxNew.Image.png" />
+    <None Remove="Assets\Images\uxNewItem.Image.png" />
+    <None Remove="Assets\Images\uxNewItemMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxNewMessage.Image.png" />
+    <None Remove="Assets\Images\uxNewMessageMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxOk.Image.png" />
+    <None Remove="Assets\Images\uxPaste.Image.png" />
+    <None Remove="Assets\Images\uxPasteMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxPlay.Image.png" />
+    <None Remove="Assets\Images\uxProperties.Image.png" />
+    <None Remove="Assets\Images\uxPropertiesMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxRemove.Image.png" />
+    <None Remove="Assets\Images\uxSave.Image.png" />
+    <None Remove="Assets\Images\uxSaveAs.Image.png" />
+    <None Remove="Assets\Images\uxSecsIIClearMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxSecsLogClearMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxSecsLogCollapseMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxSecsLogExpandMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxSecsStatus.Image.png" />
+    <None Remove="Assets\Images\uxSend.Image.png" />
+    <None Remove="Assets\Images\uxSendMenuItem.Image.png" />
+    <None Remove="Assets\Images\uxStop.Image.png" />
+    <None Remove="Assets\Images\uxUp.Image.png" />
+    <None Remove="Assets\Images\uxUpdate.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\EquipmentTool.Core\EquipmentTool.Core.csproj" />
+    <ProjectReference Include="..\..\Services\EquipmentTool.Services.Interfaces\EquipmentTool.Services.Interfaces.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Secs4Net">
+      <HintPath>C:\Users\Administrator\Downloads\secs4net-base\src\Secs4Net\bin\Debug\net6.0\Secs4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Secs4Net.Sml">
+      <HintPath>C:\Users\Administrator\Downloads\secs4net-base\src\Secs4Net.Sml\bin\Debug\net6.0\Secs4Net.Sml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Images\uxAbout.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxAdd.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxAutoRunner.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxBrowse.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxBrowseWrite.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxCancel.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxCollapseMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxConfig.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxConnect.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxCopy.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxCopyMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxCut.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxCutMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxDelete.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxDeleteMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxDetailMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxDisconnect.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxDown.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxDuplicateMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxEdit.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxEditMapping.Image.gif">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxEventClearMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxExit.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxExpandMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxHelp.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxHexToDec.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxLoad.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxMonitorClearMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxMoveBottom.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxMoveBottomMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxMoveDown.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxMoveDownMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxMoveTop.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxMoveTopMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxMoveUp.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxMoveUpMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxNew.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxNewItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxNewItemMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxNewMessage.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxNewMessageMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxOk.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxPaste.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxPasteMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxPlay.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxProperties.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxPropertiesMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxRemove.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxSave.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxSaveAs.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxSecsIIClearMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxSecsLogClearMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxSecsLogCollapseMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxSecsLogExpandMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxSecsStatus.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxSend.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxSendMenuItem.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxStop.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxUp.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Images\uxUpdate.Image.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+</Project>

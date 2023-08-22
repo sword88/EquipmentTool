@@ -1,0 +1,175 @@
+﻿<UserControl x:Class="EquipmentTool.Modules.EQPSimulator.Views.SimuConfigView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:EquipmentTool.Modules.EQPSimulator.Views"
+             mc:Ignorable="d"  AllowDrop="True"
+             d:DesignHeight="500" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <md:ColorZone Grid.Row="0" md:ShadowAssist.ShadowDepth="Depth2" DockPanel.Dock="Top" AllowDrop="True">
+            <DockPanel LastChildFill="True">
+                <StackPanel DockPanel.Dock="Right" Orientation="Horizontal" Margin="10,0">
+                    <Button  Command="{Binding CancelCommand}" Content="✕" Style="{StaticResource MaterialDesignFlatDarkButton}"/>
+                </StackPanel>
+                <TextBlock Grid.Row="0" Padding="20,10" Text="Settings" FontWeight="Bold" 
+                   FontSize="20">
+                    <TextBlock.InputBindings>
+                        <MouseBinding MouseAction="LeftDoubleClick" Command="{Binding ScreenShotCommand}"
+                                           CommandParameter="{Binding RelativeSource={RelativeSource AncestorType=UserControl}}"/>
+                    </TextBlock.InputBindings>
+                    <FrameworkElement.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem Header="关闭" Command="{Binding CancelCommand}">
+                                <MenuItem.Icon>
+                                    <md:PackIcon Kind="Close" />
+                                </MenuItem.Icon>
+                            </MenuItem>
+                        </ContextMenu>
+                    </FrameworkElement.ContextMenu>
+                </TextBlock>
+            </DockPanel>
+        </md:ColorZone>
+        <ScrollViewer Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid Row="0">
+                    <GroupBox Margin="10,10" Header="General">
+                        <StackPanel Orientation="Horizontal" MinWidth="600">
+                            <TextBlock Text="Commun Type"/>
+                            <ComboBox ItemsSource="{Binding CurrentSecsHost}" SelectedItem="{Binding CurrentSecsHost}" Margin="10,0,0,0">
+                            </ComboBox>
+                            <TextBlock Text="Model"/>
+                            <ComboBox ItemsSource="{Binding EqpModels}" Margin="10,0,0,0">
+                            </ComboBox>
+                            <TextBlock Text="Device ID"/>
+                            <TextBox Width="100" Text="{Binding DeviceId}"
+                             VerticalAlignment="Center" md:HintAssist.Hint="Device ID"
+                                        md:TextFieldAssist.HasClearButton="True"/>
+                        </StackPanel>
+                    </GroupBox>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <GroupBox Margin="10,10" Header="TCP/IP">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <TextBlock Text="Connection Mode" Grid.Row="0" Grid.Column="0" />
+                            <ComboBox Grid.Row="0" Grid.Column="1" MinWidth="50" ItemsSource="{Binding ConnectModeList}" SelectedItem="{Binding ConnectMode}">
+                            </ComboBox>
+
+                                <TextBlock Text="Local IP" Grid.Column="0" Grid.Row="1"/>
+                                <TextBox Width="100" Text="{Binding IpAddress}" Grid.Column="0" Grid.Row="1"
+                                        VerticalAlignment="Center" md:HintAssist.Hint="IP地址"
+                                        md:TextFieldAssist.HasClearButton="True">
+                                </TextBox>
+                                    
+                                <TextBlock Text="Local Port" Grid.Column="1" Grid.Row="1"/>
+                                <TextBox Width="50" Text="{Binding PortNum}" Grid.Column="1" Grid.Row="1"
+                                        VerticalAlignment="Center" md:HintAssist.Hint="端口号"
+                                        md:TextFieldAssist.HasClearButton="True">
+                                </TextBox>
+                            
+                            
+                                <TextBlock Text="Remote IP" Grid.Column="0" Grid.Row="2"/>
+                                <TextBox Width="100" Text="{Binding RemoteIpAddress}" Grid.Column="0" Grid.Row="2"
+                                            VerticalAlignment="Center" md:HintAssist.Hint="IP地址"
+                                            md:TextFieldAssist.HasClearButton="True">
+                                </TextBox>
+                                <TextBlock Text="Remote Port" Grid.Column="1" Grid.Row="2"/>
+                                <TextBox Width="50" Text="{Binding RemotePortNum}" Grid.Column="1" Grid.Row="2"
+                                            VerticalAlignment="Center" md:HintAssist.Hint="端口号"
+                                            md:TextFieldAssist.HasClearButton="True">
+                                </TextBox>
+                            
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <GroupBox Margin="10,10" Header="HSMS Timeout">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="25"/>
+                                <ColumnDefinition Width="auto"/>
+                                <ColumnDefinition Width="60"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            
+                            <TextBlock Text="T3" Grid.Column="0" Grid.Row="0"/>
+                            <TextBox Width="100" Text="{Binding T3}" Grid.Column="1"  Grid.Row="0"
+                                        HorizontalAlignment="Left" md:HintAssist.Hint="T3"
+                                        md:TextFieldAssist.HasClearButton="True"/>
+                            <TextBlock Text="T5" Grid.Column="2" Grid.Row="0"/>
+                            <TextBox Width="100" Text="{Binding T5}" Grid.Column="3" Grid.Row="0"
+                                    HorizontalAlignment="Left" md:HintAssist.Hint="T5"
+                                    md:TextFieldAssist.HasClearButton="True"/>
+                            
+                            
+                            <TextBlock Text="T6" Grid.Column="0" Grid.Row="1"/>
+                            <TextBox Width="100" Text="{Binding T6}" Grid.Column="1" Grid.Row="1"
+                                        HorizontalAlignment="Left" md:HintAssist.Hint="T6"
+                                        md:TextFieldAssist.HasClearButton="True">
+                            </TextBox>
+                            <TextBlock Text="T7" Grid.Column="2" Grid.Row="1"/>
+                            <TextBox Width="100" Text="{Binding T7}" Grid.Column="3" Grid.Row="1"
+                                        HorizontalAlignment="Left" md:HintAssist.Hint="T7"
+                                        md:TextFieldAssist.HasClearButton="True">
+                            </TextBox>
+                            
+
+                            <TextBlock Text="T8" Grid.Column="0"  Grid.Row="2"/>
+                            <TextBox Width="100" Text="{Binding T8}" Grid.Column="1" Grid.Row="2"
+                                        HorizontalAlignment="Left" md:HintAssist.Hint="T8"
+                                        md:TextFieldAssist.HasClearButton="True">
+                            </TextBox>
+                            <TextBlock Text="Link Test" Grid.Column="2" Grid.Row="2"/>
+                            <TextBox Width="100" Text="{Binding LinkTest}" Grid.Column="3" Grid.Row="2"
+                                        HorizontalAlignment="Left" md:HintAssist.Hint="Link Test"
+                                        md:TextFieldAssist.HasClearButton="True">
+                            </TextBox>
+  
+                        </Grid>
+                    </GroupBox>
+                </Grid>
+            </Grid>
+        </ScrollViewer>
+        <StackPanel Margin="5" Orientation="Horizontal" Grid.Row="2"
+                    HorizontalAlignment="Right">
+            <Button Margin="0,0,10,0"
+                    ToolTip="Esc"
+                    Command="{Binding CancelCommand}"
+                    Style="{StaticResource MaterialDesignOutlinedButton}">
+                <StackPanel>
+                    <TextBlock Text="取消">
+                        <md:PackIcon Kind="LanConnect" />
+                    </TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Content="保存" Command="{Binding SaveCommand}" IsEnabled="{Binding IsSaveButtonEnabled,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}" ToolTip="Ctrl+S"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

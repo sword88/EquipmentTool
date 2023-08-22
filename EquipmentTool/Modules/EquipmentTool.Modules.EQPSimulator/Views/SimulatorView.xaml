@@ -1,0 +1,318 @@
+﻿<UserControl x:Class="EquipmentTool.EQPSimulator.Views.SimulatorView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True" 
+             xmlns:local="clr-namespace:EquipmentTool.Core.Models;assembly=EquipmentTool.Core"
+             xmlns:cv="clr-namespace:EquipmentTool.Core.Common.Converters;assembly=EquipmentTool.Core"      
+             xmlns:s="clr-namespace:Secs4Net;assembly=Secs4Net"
+             xmlns:md="http://materialdesigninxaml.net/winfx/xaml/themes">
+    <UserControl.Resources>
+        <cv:BoolToVisibilityConveter x:Key="BoolToVisibility"/>
+        <cv:BooFalseToVisibilityConveter x:Key="FalseToVisibility"/>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <md:DialogHost>
+            <md:DrawerHost >
+                <md:DrawerHost.RightDrawerContent>
+                    <DockPanel Width="300" LastChildFill="False">
+                        <ScrollViewer>
+                        </ScrollViewer>
+                    </DockPanel>
+                </md:DrawerHost.RightDrawerContent>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*"/>
+                        <ColumnDefinition Width="5*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Grid.Row="0" Grid.ColumnSpan="3" >
+                        <ToolBarTray>
+                            <ToolBar>
+                                <Button ToolTip="New" Command="{Binding NewCommand}">
+                                    <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxNew.Image.png" />
+                                </Button>
+                                <Button ToolTip="Load" Command="{Binding LoadCommand}">
+                                    <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxLoad.Image.png" />
+                                </Button>
+                                <Button ToolTip="Save" Command="{Binding SaveCommand}">
+                                    <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxSave.Image.png" />
+                                </Button>
+                                <Button ToolTip="SaveAs" Command="{Binding SaveAsCommand}">
+                                    <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxSaveAs.Image.png" />
+                                </Button>
+                            </ToolBar>
+                            <ToolBar>
+                                <Button ToolTip="Connect" Command="{Binding ConnectCommand}" 
+                                        CommandParameter="Connect"
+                                        IsEnabled="{Binding IsConnected}">
+                                    <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxConnect.Image.png" />
+                                </Button>
+                                <Button ToolTip="DisConnect" Command="{Binding ConnectCommand}" 
+                                        CommandParameter="DisConnect"
+                                        IsEnabled="{Binding IsDisConnected}">
+                                    <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxDisconnect.Image.png" />
+                                </Button>
+                                <Button ToolTip="Settings" Command="{Binding SettingCommand}">
+                                    <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxConfig.Image.png" />
+                                </Button>
+                            </ToolBar>
+                            <ToolBar>
+                                <Button ToolTip="About" Command="{Binding AboutCommand}">
+                                    <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxAbout.Image.png" />
+                                </Button>
+                            </ToolBar>
+                        </ToolBarTray>
+                    </Grid>
+                    <Grid  Grid.Row="1" Grid.RowSpan="6" Grid.Column="0" MinWidth="50">
+                        <Border VerticalAlignment="Top" HorizontalAlignment="Center" Margin="10,0,0,0">
+                            <StackPanel Margin="10,0,0,0" Orientation="Horizontal">
+                                <TextBox Text="" Width="182" Height="22" HorizontalAlignment="Left"
+                                     VerticalAlignment="Center"/>
+                                <Button>
+                                    <Button.Content>
+                                        <md:PackIcon Kind="Search" Width="22" Height="25" VerticalAlignment="Center"/>
+                                    </Button.Content>
+                                </Button>
+                            </StackPanel>
+                        </Border>
+                        <Border VerticalAlignment="Top" Margin="10,35,0,0">
+                            <TreeView x:Name="SmlLibrary" MinWidth="100" ItemsSource="{Binding Path=SecsLibrary}" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+                                <i:Interaction.Triggers>
+                                    <i:EventTrigger EventName="SelectedItemChanged">
+                                        <i:InvokeCommandAction Command="{Binding SelectedItemChangedCommand}"
+                                                           CommandParameter="{Binding ElementName=SmlLibrary,Path=SelectedItem}"/>
+                                    </i:EventTrigger>
+                                </i:Interaction.Triggers>
+                                <TreeView.ItemTemplate>
+                                    <HierarchicalDataTemplate DataType="{x:Type local:SecsLibraryTree}" ItemsSource="{Binding Path=Children}">
+                                        <TextBlock Text="{Binding Path=Name}" Tag="{Binding Path=Name}">
+                                            <FrameworkElement.ContextMenu>
+                                                <ContextMenu>
+                                                    <MenuItem Header="Duplicate Message" Command="" CommandParameter="">
+                                                        <MenuItem.Icon>
+                                                            <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxDuplicateMenuItem.Image.png" />
+                                                        </MenuItem.Icon>    
+                                                    </MenuItem>
+                                                    <MenuItem Header="New Message" Command="" CommandParameter="">
+                                                        <MenuItem.Icon>
+                                                            <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxNewMessageMenuItem.Image.png" />
+                                                        </MenuItem.Icon>
+                                                    </MenuItem>
+                                                    <MenuItem Header="New Item" Command="" CommandParameter="">
+                                                        <MenuItem.Icon>
+                                                            <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxNewItemMenuItem.Image.png" />
+                                                        </MenuItem.Icon>    
+                                                    </MenuItem>
+                                                    <MenuItem Header="Delete" Command="" CommandParameter="">
+                                                       <MenuItem.Icon>
+                                                            <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxDeleteMenuItem.Image.png" />
+                                                        </MenuItem.Icon> 
+                                                    </MenuItem>
+                                                    <MenuItem Header="Properties" Command="" CommandParameter="">
+                                                       <MenuItem.Icon>
+                                                            <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxPropertiesMenuItem.Image.png" />
+                                                        </MenuItem.Icon> 
+                                                    </MenuItem>
+                                                    <MenuItem Header="Send" Command="" CommandParameter="">
+                                                      <MenuItem.Icon>
+                                                            <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxSendMenuItem.Image.png" />
+                                                       </MenuItem.Icon> 
+                                                    </MenuItem>
+                                                    <Separator/>
+                                                    <MenuItem Header="Expand" Command="" CommandParameter="">
+                                                      <MenuItem.Icon>
+                                                        <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxSecsLogExpandMenuItem.Image.png" />
+                                                      </MenuItem.Icon> 
+                                                    </MenuItem>
+                                                    <MenuItem Header="Collapse" Command="" CommandParameter="">
+                                                        <MenuItem.Icon>
+                                                            <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxSecsLogCollapseMenuItem.Image.png" />
+                                                       </MenuItem.Icon> 
+                                                    </MenuItem>
+                                                    <Separator/>
+                                                    <MenuItem Header="Cut" Command="" CommandParameter="">
+                                                       <MenuItem.Icon>
+                                                            <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxCutMenuItem.Image.png" />
+                                                       </MenuItem.Icon> 
+                                                    </MenuItem>
+                                                    <MenuItem Header="Copy" Command="" CommandParameter="">
+                                                       <MenuItem.Icon>
+                                                            <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxCopyMenuItem.Image.png" />
+                                                       </MenuItem.Icon> 
+                                                    </MenuItem>
+                                                    <MenuItem Header="Paste" Command="" CommandParameter="">
+                                                        <MenuItem.Icon>
+                                                            <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxPasteMenuItem.Image.png" />
+                                                       </MenuItem.Icon> 
+                                                    </MenuItem>
+                                                    <Separator/>
+                                                    <MenuItem Header="Move Up" Command="" CommandParameter="">
+                                                       <MenuItem.Icon>
+                                                            <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxMoveUpMenuItem.Image.png" />
+                                                       </MenuItem.Icon> 
+                                                    </MenuItem>
+                                                    <MenuItem Header="Move To Top" Command="" CommandParameter="">
+                                                       <MenuItem.Icon>
+                                                            <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxMoveTopMenuItem.Image.png" />
+                                                       </MenuItem.Icon> 
+                                                    </MenuItem>
+                                                    <MenuItem Header="Move Down" Command="" CommandParameter="">
+                                                       <MenuItem.Icon>
+                                                            <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxMoveDownMenuItem.Image.png" />
+                                                       </MenuItem.Icon> 
+                                                    </MenuItem>
+                                                    <MenuItem Header="Move To Bottom" Command="" CommandParameter="">
+                                                       <MenuItem.Icon>
+                                                            <Image Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxMoveBottomMenuItem.Image.png" />
+                                                       </MenuItem.Icon> 
+                                                    </MenuItem>
+                                                </ContextMenu>
+                                            </FrameworkElement.ContextMenu>
+                                        </TextBlock>
+                                    </HierarchicalDataTemplate>
+                                </TreeView.ItemTemplate>
+                            </TreeView>
+                        </Border>
+                    </Grid>
+                    <GridSplitter Grid.Column="1" Grid.Row="2" Grid.RowSpan="6" Width="2" HorizontalAlignment="Stretch"/>
+                    <StackPanel Grid.Row="2" Grid.Column="2" Orientation="Horizontal">
+                        <GroupBox Margin="10,10" Header="Manual">
+                            <StackPanel Orientation="Horizontal" MinWidth="600">
+                                <Grid Width="572">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Grid.Row="0" Grid.Column="0" Text="StripID" VerticalAlignment="Center"/>
+                                    <TextBox Grid.Row="0" Grid.Column="1" Width="80" Text="{Binding StripID}" VerticalAlignment="Center" md:HintAssist.Hint="StripID" md:TextFieldAssist.HasClearButton="True"/>
+                                    <TextBlock Grid.Row="0" Grid.Column="2" Text="StripRow"/>
+                                    <TextBox Grid.Row="0" Grid.Column="3" Width="50" Text="{Binding StripRow}" VerticalAlignment="Center" md:HintAssist.Hint="StripRow" md:TextFieldAssist.HasClearButton="True"/>
+                                    <TextBlock Grid.Row="0" Grid.Column="4" Text="StripCol"/>
+                                    <TextBox Grid.Row="0" Grid.Column="5" Width="50" Text="{Binding StripCol}" VerticalAlignment="Center" md:HintAssist.Hint="StripCol" md:TextFieldAssist.HasClearButton="True"/>
+
+                                    <TextBlock Grid.Row="1" Grid.Column="0" Text="WaferID"/>
+                                    <TextBox Grid.Row="1" Grid.Column="1" Width="80" Text="{Binding WaferID}" VerticalAlignment="Center" md:HintAssist.Hint="WaferID" md:TextFieldAssist.HasClearButton="True"/>
+                                    <TextBlock Grid.Row="1" Grid.Column="2" Text="BondDie"/>
+                                    <TextBox Grid.Row="1" Grid.Column="3" Width="50" Text="{Binding BondDieCount}" VerticalAlignment="Center" md:HintAssist.Hint="BondDie" md:TextFieldAssist.HasClearButton="True"/>
+                                    <TextBlock Grid.Row="1" Grid.Column="4" Text="Row:Col"/>
+                                    <TextBox Grid.Row="1" Grid.Column="5" Width="50" Text="1" VerticalAlignment="Center" md:HintAssist.Hint="StripCol" md:TextFieldAssist.HasClearButton="True"/>
+
+
+                                    <TextBlock Grid.Row="2" Grid.Column="0" Text="ProcessNo"/>
+                                    <ComboBox Grid.Row="2" Grid.Column="1" ItemsSource="{Binding ProcessNoList}" SelectedItem=""/>
+                                    <TextBlock Grid.Row="2" Grid.Column="2" Text="EQPActions"/>
+                                    <ComboBox Grid.Row="2" Grid.Column="3" ItemsSource="{Binding EqpActionList}" SelectedItem="{Binding EqpCurrentBehaviorName}"/>
+                                    <Button Grid.Row="2" Grid.Column="4" Command="{Binding SendCommand}"  Margin="10,0">
+                                        <StackPanel>
+                                            <TextBlock  Text="发送">
+                                                <md:PackIcon Kind="Send" />
+                                            </TextBlock>
+                                        </StackPanel>
+                                    </Button>
+                                </Grid>
+                            </StackPanel>
+                        </GroupBox>
+                    </StackPanel>
+                    <StackPanel Grid.Row="3" Grid.Column="2" Orientation="Horizontal">
+                        <GroupBox Margin="10,10" Header="Auto">
+                            <StackPanel Orientation="Horizontal" MinWidth="600">
+                                <Button Grid.Row="2" Grid.Column="4" Command="{Binding RunCommand}"  Margin="10,0">
+                                    <StackPanel>
+                                        <TextBlock  Text="Run">
+                                        <md:PackIcon Kind="Play" />
+                                        </TextBlock>
+                                    </StackPanel>
+                                </Button>
+                                <Button Grid.Row="2" Grid.Column="4" Command="{Binding StopCommand}"  Margin="10,0">
+                                    <StackPanel>
+                                        <TextBlock  Text="Stop">
+                                                <md:PackIcon Kind="Stop" />
+                                        </TextBlock>
+                                    </StackPanel>
+                                </Button>
+                                <Button Grid.Row="2" Grid.Column="4" Command="{Binding ResetCommand}"  Margin="10,0">
+                                    <StackPanel>
+                                        <TextBlock  Text="Reset">
+                                                <md:PackIcon Kind="Replay" />
+                                        </TextBlock>
+                                    </StackPanel>
+                                </Button>
+                                <Button Grid.Row="2" Grid.Column="4" Command="{Binding AutoBondCommand}"  Margin="10,0">
+                                    <StackPanel>
+                                        <TextBlock  Text="AutoBond">
+                                                <md:PackIcon Kind="RefreshAuto" />
+                                        </TextBlock>
+                                    </StackPanel>
+                                </Button>
+
+                            </StackPanel>
+
+
+                        </GroupBox>
+                    </StackPanel>
+                    <StackPanel Grid.Row="4" Grid.Column="2" Orientation="Horizontal">
+                        <GroupBox Margin="10,10" Header="Log">
+                            <StackPanel Orientation="Horizontal">
+                                <RichTextBox Name="LogRichTextBox" Grid.Row="3" Grid.ColumnSpan="4" IsReadOnly="true"
+                                     IsUndoEnabled="false" UndoLimit="0" VerticalScrollBarVisibility="Auto" Height="300"
+                                             Width="600"
+                                     HorizontalScrollBarVisibility="Auto" Grid.Column="1">
+                                    <FlowDocument x:Name="ParagraphDocument">
+                                        <Paragraph x:Name="LogParagraph" LineHeight="18"/>
+                                    </FlowDocument>
+                                </RichTextBox>
+                            </StackPanel>
+                        </GroupBox>
+                    </StackPanel>
+                    <StatusBar Grid.Row="5" Grid.ColumnSpan="3">
+                        <StatusBarItem>
+                            <Grid>
+                                <TextBlock>
+                                    <Image Visibility="{Binding IsSelect,UpdateSourceTrigger=PropertyChanged,Converter={StaticResource BoolToVisibility}}"
+                                           Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxConnect.Image.png" />
+                                    <Image Visibility="{Binding IsSelect,UpdateSourceTrigger=PropertyChanged,Converter={StaticResource FalseToVisibility}}"
+                                           Source="/EquipmentTool.Modules.EQPSimulator;component/Assets/Images/uxDisConnect.Image.png" />
+                                    <TextBlock Text="{Binding ConnectMode}"/>
+                                    <TextBlock Text="{Binding IpAddress}"/>
+                                    <TextBlock Text=":"/>
+                                    <TextBlock Text="{Binding PortNum}"/>
+                                </TextBlock>
+                            </Grid>
+                        </StatusBarItem>
+                    </StatusBar>
+                </Grid>
+            </md:DrawerHost>
+        </md:DialogHost>
+    </Grid>
+</UserControl>

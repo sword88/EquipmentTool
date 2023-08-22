@@ -1,0 +1,2467 @@
+{
+	"EQPSimulatorActionListByType": [
+	{
+		"EqpType": "Plasma",
+		"AllItemList":"WaferID, ChannelID, StripID, Strip_row, Strip_col, Pickup_row, Pickup_col, E142MapData, cellstatus, defectcode",
+		"EqpBehaviors": "ProceeStart,ClearAllDateRequest,waferLoaded,ReadStripID,CloseBarCode,LeadFrameArrival_Down,LeadFrameArrival_Up,ReadStripIDRequest,PickLogging_BadDie,PickLogging,oneStripBonding",
+		"EqpActionList": [
+		{
+			"EqpActionName": "EqpStatus",
+			"StreamFuncion": "MSMQ",					
+			"EqpActionStr": "ProcessState:RUN;
+                             ControlState:OnLine"
+		},
+		{
+			"EqpActionName": "EqpFinishStatus",
+			"StreamFuncion": "MSMQ",					
+			"EqpActionStr": "ProcessState:END;
+                             ControlState:OnLine"
+		},
+		{
+			"EqpActionName": "ReadInputOutPutMagzine",
+			"StreamFuncion": "MSMQ",			
+			"EqpActionStr": "InputPutMagzine:ChannelID;
+                             OutPutMagzine:ChannelID"
+		},
+		{
+			"EqpActionName": "CheckPoint",
+			"StreamFuncion": "MSMQ",			
+			"EqpActionStr": "StripList:ChannelID"
+		},
+		{
+			"EqpActionName": "GetStripId",
+			"StreamFuncion": "MSMQ",		
+			"EqpActionStr": "ErrorCode:0;
+			                 StripId:StripID"
+		},
+		{
+			"EqpActionName": "RMSTrackIn",
+			"StreamFuncion": "MSMQ",		
+			"EqpActionStr": "ErrorCode:0;
+			                 ErrorText:aNY MESSAGE"
+
+		},
+		{
+			"EqpActionName": "RFPowerStatusChanged",
+			"StreamFuncion": "MSMQ",		
+			"EqpActionStr": "CurrentStatus:false;
+			                 ErrorText:aNY MESSAGE"
+
+		}
+		],
+		"VIDList": []
+	},
+	{
+		"EqpType": "Esec2008",
+		"EqpBehaviors": "ProceeStart,ClearAllDateRequest,waferLoaded,ReadStripID,CloseBarCode,LeadFrameArrival_Down,LeadFrameArrival_Up,ReadStripIDRequest,PickLogging_BadDie,PickLogging,oneStripBonding",
+		"EqpActionList": [{
+			"EqpActionName": "ClearAllDateRequest",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": "< L L3
+                                  <U4 DATAID 3392836>
+                                  <U4 CEID 999>
+			>
+		  "
+		},
+		{
+			"EqpActionName": "ProceeStart",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+			  < L L3
+				<U4 DATAID 2130>
+				<U4 CEID 12>
+				< L La
+					< L L2
+						<U4 RPTID 8888>
+						< L Lb
+							<U1 V 4>
+						>
+					>
+				>
+			>
+		  "
+		},
+		{
+			"EqpActionName": "ReadStripID",
+			"StreamFuncion": "COM",
+			"EqpActionStr": "StripID"
+		},
+		{
+			"EqpActionName": "CloseBarCode",
+			"StreamFuncion": "COM",			
+			"EqpActionStr": "LOFF\r"
+		},
+		{
+			"EqpActionName": "LeadFrameArrival_Down",
+			"StreamFuncion": "COM",
+			"EqpActionStr": "#0100000$"
+		},
+		{
+			"EqpActionName": "LeadFrameArrival_Up",
+			"StreamFuncion": "COM",
+			"EqpActionStr": "#0110000$"
+		},
+		{
+			"EqpActionName": "ReadStripIDRequest",
+			"StreamFuncion": "COM",
+			"EqpActionStr": "#1000000$"
+		},
+		{
+			"EqpActionName": "PickLogging_BadDie",
+			"StreamFuncion": "COM",
+			"EqpActionStr": "#0000100$"
+		},
+		{
+			"EqpActionName": "PickLogging",
+			"StreamFuncion": "COM",
+			"EqpActionStr": "#0001000$"
+		},
+		{
+			"EqpActionName": "oneStripBonding",
+			"StreamFuncion": "COM",
+			"EqpActionStr": ""
+		}],
+		"VIDList": [{
+			"Id": "124409",
+			"Name": "WaferID",
+			"SvidValue": "WaferID",
+			"SvidValueType": "Ascii"
+		},
+		{
+			"Id": "128496",
+			"Name": "WaferIDExtension",
+			"SvidValue": "",
+			"SvidValueType": "U1"
+		},
+		{
+			"Id": "159103",
+			"Name": "SVID_DevicesOnLeadframe",
+			"SvidValue": "2",
+			"SvidValueType": "U4"
+		}]
+	},
+	{
+		"EqpType": "AsmAd838",
+		"StripMap":
+		{		
+		"DownloadBincode": "006F",
+		"UploadBinCode": "0000",
+		"DownloadStripmap":"",
+		"UploadStripmap":"ASM838UploadStripmap.txt"
+		},
+		"EqpActionList": [{
+			"EqpActionName": "ClearAllDateRequest",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+		  < L L3
+			<U4 DATAID 3392836>
+			<U4 CEID 999>
+		  >
+		"
+		},
+		{
+			"EqpActionName": "ProceeStart",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+		   < L L3
+			<U4 DATAID 2852244>
+			<U4 CEID 8>
+			< L La
+				< L L2
+					<U4 RPTID 4>
+					< L Lb
+					<A V '170817115704'>
+					<I2 V 3>
+					<I2 V 7>
+					>
+				>
+			>
+        >
+		  "
+		},
+		{
+			"EqpActionName": "waferLoaded",
+			"StreamFuncion": "S6F11",			
+			"EqpActionStr": " 
+		  < L L3
+			<U4 DATAID 3392836>
+			<U4 CEID 31>
+			< L La
+				< L L2
+					<U4 RPTID 24>
+					< L Lb
+						<A V '170818104330'>
+						<U4 V 220>
+						<A V 'WaferID'>
+					>
+				>
+			>
+        >
+		"
+		},
+		{
+			"EqpActionName": "StripMapDownload",
+			"StreamFuncion": "S14F1",			
+			"EqpActionStr": " 
+		  < L L
+			<A OBJSPEC ''>
+			<A OBJTYPE 'Substrate'>
+			< L Li
+				<A OBJID 'StripID'>
+			>
+			< L Lq
+				< L L3
+					<A ATTRID 'SubstrateType'>
+					<A ATTRDATA 'Strip'>
+					<U1 ATTRRELN 0>
+				>
+			>
+			< L La
+				<A ATTRID 'MapData'>
+			>
+		>
+		"
+		},
+		{
+			"EqpActionName": "StripMapUpload",
+			"StreamFuncion": "S6F11",		
+			"EqpActionStr": " 
+		  < L L3
+			<U4 DATAID 121309>
+			<U4 CEID 237>
+			< L La
+				< L L2
+					<U4 RPTID 232>
+					< L Lb
+						<A V 'E142MapData'>
+					>
+				>
+			>
+		>
+		"
+		},
+		{
+			"EqpActionName": "StripMapUploadFromFile",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+		  < L L3
+			<U4 DATAID 121309>
+			<U4 CEID 237>
+			< L La
+				< L L2
+					<U4 RPTID 232>
+					< L Lb
+						<A V 'E142MapData'>
+					>
+				>
+			>
+		>
+		"
+		},
+		{
+			"EqpActionName": "PickLogging",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+		  < L L3
+			<U4 DATAID 7643441>
+			<U4 CEID 118>
+			< L La
+				< L L2
+					<U4 RPTID 118>
+					< L Lb
+						<A V '170817115443'>
+						<A V 'StripID'>
+						<A V ''>
+						<U4 V Pickup_row>
+						<U4 V Pickup_col>
+						<U2 V 0>
+						<U4 V 2>
+						<U4 V 1>
+					>
+				>
+			>
+		>
+		"
+		},
+		{
+			"EqpActionName": "oneStripBonding",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": ""
+		},
+		{
+			"EqpActionName": "OutPutMagzineLoadUnload",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": "< L L3
+                       	<U4 DATAID 303789>
+                       	<U4 CEID 111>
+                       	< L La
+                       		< L L2
+                       			<U4 RPTID 111>
+                       			< L Lb
+                       				<A V '190311024829'>
+                       				<I2 V 0>
+                       				<I2 V 1>
+                       				<A V ''>
+                       			>
+                       		>
+                       	>
+                       >"
+		}],
+		"VIDList": [{
+			"Id": "89",
+			"Name": "WaferID",
+			"SvidValue": "WaferID",
+			"SvidValueType": "Ascii"
+		},
+		{
+			"Id": "1330",
+			"Name": "2D Ennable",
+			"SvidValue": "ENABLE",
+			"SvidValueType": "Ascii"
+		},
+		{
+			"Id": "1345",
+			"Name": "StripMap DownLoad",
+			"SvidValue": "1",
+			"SvidValueType": "Ascii"
+		},
+		{
+			"Id": "950",
+			"Name": "Post Bond Alarm Skip",
+			"SvidValue": "0",
+			"SvidValueType": "Ascii"
+		}]
+	},
+	{
+		"EqpType": "HAMIA110",		
+		"StripMap":
+		{
+		"DownloadBincode": "0100",
+		"UploadBinCode": "0C00",
+		"UploadStripmap":"HAMIA110UploadMap.txt"
+		},
+		"EqpActionList": [{
+			"EqpActionName": "ClearAllDateRequest",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " < L L3\r\n        <U4 DATAID 3392836>\r\n        <U4 CEID 999>\r\n        >"
+		},
+		{
+			"EqpActionName": "ProceeStart",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " < L L3\r\n        <U4 DATAID 2130>\r\n        <U4 CEID 12>\r\n        < L La\r\n        < L L2\r\n        <U4 RPTID 8888>\r\n        < L Lb\r\n        <U1 V 4>\r\n        >\r\n        >\r\n        >\r\n        >"
+		},
+		{
+			"EqpActionName": "Establish",
+			"StreamFuncion": "S1F13",
+			"EqpActionStr": " < L L2
+                             >"
+		},
+		{
+			"EqpActionName": "WaferPickUplogging",
+			"StreamFuncion": "S12F83",
+			"EqpActionStr": " 
+          < L 
+          	<I2  -82 30>
+          	<A  '1'>
+          >
+              
+		  "
+		},
+		{
+			"EqpActionName": "PickLogging",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+                   			< L L3
+                   	<U4 DATAID 118052>
+                   	<U4 CEID 40051>
+                   	< L La
+                   		< L L2
+						<U4 RPTID 40051>
+		            	< L Lb
+				         <A V 'StripID'>
+		         		 <A V 'WaferID'>
+				         <U4 V Pickup_col>
+				         <U4 V Pickup_row>
+				         <U1 V 4>
+			            >
+                   		>
+                   	>
+                   >
+    
+		  "
+		},
+		{
+			"EqpActionName": "oneStripBonding",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": ""
+		},
+		{
+			"EqpActionName": "LoadWaferS12F1",
+			"StreamFuncion": "S12F3",
+			"EqpActionStr": "
+			< L L9
+	<A MID 'WaferID'>
+	<b  IDTYP 0>
+	<b  MAPFT 1>
+	<U2 FNLOC 0>
+	<U2 FFROT 0>
+	<b  ORLOC 0>
+	<b  PRAXI 0>
+	<A BCEQU '1'>
+	<A NULBC '.'>
+>
+"
+		},
+		{
+			"EqpActionName": "ReadStripId",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+           	< L L3
+               	<U4 DATAID 635>
+               	<U4 CEID 40053>
+               	< L La
+               		< L L2
+               			<U4 RPTID 40053>
+               			< L Lb
+               				<A V 'WaferID'>
+               				<A V 'StripID'>
+               			>
+               		>
+               	>
+            >
+		  "
+		},
+		{
+			"EqpActionName": "LoadWaferS12F15",
+			"StreamFuncion": "S12F15",
+			"EqpActionStr": "
+			< L L2
+	<A MID 'WaferID'>
+	<b  IDTYP 0>
+>"
+		},
+		{
+			"EqpActionName": "StripMapDownload",
+			"StreamFuncion": "S14F1",
+			"EqpActionStr": "
+			< L L
+         	<A OBJSPEC '_'>
+         	<A OBJTYPE 'Substrate'>
+         	< L Li
+         		<A OBJID 'StripID'>
+         	>
+         	< L Lq
+         		< L L3
+         			<A ATTRID 'SubstrateType'>
+         			<A ATTRDATA 'Strip'>
+         			<U1 ATTRRELN 0>
+         		>
+         	>
+         	< L La
+			  <A V 'MapData'>
+         	>
+                >
+             "
+       		},
+       		{
+       			"EqpActionName": "StripMapUpload",
+       			"StreamFuncion": "S6F11",
+       			"EqpActionStr": " 				
+                  < L L3
+                	<U4 DATAID 121307>
+                	<U4 CEID 40091>
+                	< L La
+                		< L L2
+                			<U4 RPTID 40091>
+                			< L Lb                				
+                				<A V 'E142MapData'>
+                			>
+                		>
+                	>
+                >      			
+       		"
+       		},
+		  {
+			"EqpActionName": "StripMapUploadFromFile",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " < L L3
+                	<U4 DATAID 121307>
+                	<U4 CEID 40091>
+                	< L La
+                		< L L2
+                			<U4 RPTID 40091>
+                			< L Lb
+                				<A V 'E142MapData'>
+                			>
+                		>
+                	>
+                >      			
+       		"
+			},
+			{
+			"EqpActionName": "OutPutMagzineLoadUnload",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": "< L L3
+                       	<U4 DATAID 303789>
+                       	<U4 CEID 111>
+                       	< L La
+                       		< L L2
+                       			<U4 RPTID 111>
+                       			< L Lb
+                      
+ 				<A V '190311024829'>
+                       				<I2 V 1>
+                       				<I2 V 1>
+                       				<A V ''>
+                       			>
+                       		>
+                       	>
+                       >"
+		}
+			],
+       		"VIDList": [{
+       			"Id": "20018",
+       			"Name": "WaferID",
+       			"SvidValue": "WaferID",
+       			"SvidValueType": "U4"
+       		}],
+       		"Report": [{
+       			"Id": "9",
+       			"Value": "
+       			< L L3
+       				<U1 DATAID 129>
+       				<U2 CEID 9>
+       				< L La
+       					< L L2
+       						<U2 RPTID 8>
+       						< L Lb
+       							<A V 'MCD86A0S202-CA5CZ050'>
+       						>
+       					>
+       				>
+       			>
+       		"
+       		}
+		
+		],
+		
+	},
+	{
+		"EqpType": "ESEC2100XP",		
+		"StripMap":
+		{"DownloadBincode": "0A0F",
+		"UploadBinCode": "0C00",
+		"UploadStripmap":"esec2100sd.txt"
+		},
+		"EqpActionList": [{
+			"EqpActionName": "ClearAllDateRequest",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " < L L3\r\n        <U4 DATAID 3392836>\r\n        <U4 CEID 999>\r\n        >"
+		},
+		{
+			"EqpActionName": "ProceeStart",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " < L L3\r\n        <U4 DATAID 2130>\r\n        <U4 CEID 12>\r\n        < L La\r\n        < L L2\r\n        <U4 RPTID 8888>\r\n        < L Lb\r\n        <U1 V 4>\r\n        >\r\n        >\r\n        >\r\n        >"
+		},
+		{
+			"EqpActionName": "Establish",
+			"StreamFuncion": "S1F13",
+			"EqpActionStr": " < L L2
+                             >"
+		},
+		{
+			"EqpActionName": "WaferPickUplogging",
+			"StreamFuncion": "S12F83",
+			"EqpActionStr": " 
+          < L 
+          	<I2  -82 30>
+          	<A  '1'>
+          >
+              
+		  "
+		},
+		{
+			"EqpActionName": "WaferLoaded",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+          < L 
+          	<I2  -82 30>
+          	<A  '1'>
+          >
+              
+		  "
+		},
+		{
+			"EqpActionName": "PickLogging",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+                   			< L L3
+                   	<U4 DATAID 118052>
+                   	<U4 CEID 15620>
+                   	< L La
+                   		< L L2
+                   			<U4 RPTID 5>
+                   			< L Lb
+                   				<A V 'StripID'>
+                   				<U2 V 2>
+                   				<I2 V Pickup_col Pickup_row 1>
+                   			>
+                   		>
+                   	>
+                   >
+    
+		  "
+		},
+		{
+			"EqpActionName": "oneStripBonding",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": ""
+		},
+		{
+			"EqpActionName": "StripMapDownload",
+			"StreamFuncion": "S14F1",
+			"EqpActionStr": "
+			< L L
+         	<A OBJSPEC '_'>
+         	<A OBJTYPE 'Substrate'>
+         	< L Li
+         		<A OBJID 'StripID'>
+         	>
+         	< L Lq
+         		< L L3
+         			<A ATTRID 'SubstrateType'>
+         			<A ATTRDATA 'Strip'>
+         			<U1 ATTRRELN 0>
+         		>
+         	>
+         	< L La
+         	>
+                >
+             "
+       		},
+       		{
+       			"EqpActionName": "StripMapUpload",
+       			"StreamFuncion": "S6F11",
+       			"EqpActionStr": " 				
+                				     < L L3
+                	<U4 DATAID 121307>
+                	<U4 CEID 15339>
+                	< L La
+                		< L L2
+                			<U4 RPTID 8>
+                			< L Lb
+                				<A V '2018110423175375'>
+                				<A V '2018110423175300'>
+                				<A V 'StripID'>
+                				<U2 V 2>
+                				<A V 'E142MapData'>
+                			>
+                		>
+                	>
+                >      			
+       		"
+       		},
+		  {
+			"EqpActionName": "StripMapUploadFromFile",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " < L L3
+                	<U4 DATAID 121307>
+                	<U4 CEID 15339>
+                	< L La
+                		< L L2
+                			<U4 RPTID 8>
+                			< L Lb
+                				<A V '2018110423175375'>
+                				<A V '2018110423175300'>
+                				<A V 'StripID'>
+                				<U2 V 2>
+                				<A V 'E142MapData'>
+                			>
+                		>
+                	>
+                >      			
+       		"
+			},
+			{
+			"EqpActionName": "EqpStateChange",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+			< L L3
+                                <U2 DATAID 0>
+                                <U2 CEID 1255>
+			< L L1	
+					< L L2
+						<U2 RPTID 104>
+						< L L2							
+							<A[16] V '2018092014085500'>
+                            <U1[1] V 150>
+                            <U1[1] V 210>
+                            <A[20] 'MCDD8621204-NB578040'>					
+						>
+					>
+				
+			>
+			>
+		"
+		}
+			],
+       		"VIDList": [{
+       			"Id": "252903450",
+       			"Name": "WaferID",
+       			"SvidValue": "WaferID",
+       			"SvidValueType": "Ascii"
+       		}
+			,
+			{
+       			"Id": "252903645",
+       			"Name": "WaferMap",
+       			"SvidValue": "2",
+       			"SvidValueType": "U4"
+       		}],
+       		"Report": [{
+       			"Id": "9",
+       			"Value": "
+       			< L L3
+       				<U1 DATAID 129>
+       				<U2 CEID 9>
+       				< L La
+       					< L L2
+       						<U2 RPTID 8>
+       						< L Lb
+       							<A V 'MCD86A0S202-CA5CZ050'>
+       						>
+       					>
+       				>
+       			>
+       		"
+       		}
+		
+		],
+		
+	},
+	{
+		"EqpType": "ESEC2100SD",		
+		"StripMap":
+		{"DownloadBincode": "0A0F",
+		"UploadBinCode": "0C00",
+		"UploadStripmap":"esec2100sd.txt"
+		},
+		"EqpActionList": [{
+			"EqpActionName": "ClearAllDateRequest",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " < L L3\r\n        <U4 DATAID 3392836>\r\n        <U4 CEID 999>\r\n        >"
+		},
+		{
+			"EqpActionName": "ProceeStart",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " < L L3\r\n        <U4 DATAID 2130>\r\n        <U4 CEID 12>\r\n        < L La\r\n        < L L2\r\n        <U4 RPTID 8888>\r\n        < L Lb\r\n        <U1 V 4>\r\n        >\r\n        >\r\n        >\r\n        >"
+		},
+		{
+			"EqpActionName": "Establish",
+			"StreamFuncion": "S1F13",
+			"EqpActionStr": " < L L2
+                             >"
+		},
+		{
+			"EqpActionName": "WaferPickUplogging",
+			"StreamFuncion": "S12F83",
+			"EqpActionStr": " 
+          < L 
+          	<I2  -82 30>
+          	<A  '1'>
+          >
+              
+		  "
+		},
+		{
+			"EqpActionName": "WaferLoaded",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+          < L 
+          	<I2  -82 30>
+          	<A  '1'>
+          >
+              
+		  "
+		},
+		{
+			"EqpActionName": "PickLogging",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+                   			< L L3
+                   	<U4 DATAID 118052>
+                   	<U4 CEID 15620>
+                   	< L La
+                   		< L L2
+                   			<U4 RPTID 5>
+                   			< L Lb
+                   				<A V 'StripID'>
+                   				<U2 V 2>
+                   				<I2 V Pickup_col Pickup_row 1>
+                   			>
+                   		>
+                   	>
+                   >
+    
+		  "
+		},
+		{
+			"EqpActionName": "oneStripBonding",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": ""
+		},
+		{
+			"EqpActionName": "StripMapDownload",
+			"StreamFuncion": "S14F1",
+			"EqpActionStr": "
+			< L L
+         	<A OBJSPEC '_'>
+         	<A OBJTYPE 'Substrate'>
+         	< L Li
+         		<A OBJID 'StripID'>
+         	>
+         	< L Lq
+         		< L L3
+         			<A ATTRID 'SubstrateType'>
+         			<A ATTRDATA 'Strip'>
+         			<U1 ATTRRELN 0>
+         		>
+         	>
+         	< L La
+         	>
+                >
+             "
+       		},
+       		{
+       			"EqpActionName": "StripMapUpload",
+       			"StreamFuncion": "S6F11",
+       			"EqpActionStr": " 				
+                				     < L L3
+                	<U4 DATAID 121307>
+                	<U4 CEID 15339>
+                	< L La
+                		< L L2
+                			<U4 RPTID 8>
+                			< L Lb
+                				<A V '2018110423175375'>
+                				<A V '2018110423175300'>
+                				<A V 'StripID'>
+                				<U2 V 2>
+                				<A V 'E142MapData'>
+                			>
+                		>
+                	>
+                >      			
+       		"
+       		},
+		  {
+			"EqpActionName": "StripMapUploadFromFile",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " < L L3
+                	<U4 DATAID 121307>
+                	<U4 CEID 15339>
+                	< L La
+                		< L L2
+                			<U4 RPTID 8>
+                			< L Lb
+                				<A V '2018110423175375'>
+                				<A V '2018110423175300'>
+                				<A V 'StripID'>
+                				<U2 V 2>
+                				<A V 'E142MapData'>
+                			>
+                		>
+                	>
+                >      			
+       		"
+			},
+			{
+			"EqpActionName": "EqpStateChange",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+			< L L3
+                                <U2 DATAID 0>
+                                <U2 CEID 1255>
+			< L L1	
+					< L L2
+						<U2 RPTID 104>
+						< L L2							
+							<A[16] V '2018092014085500'>
+                            <U1[1] V 150>
+                            <U1[1] V 210>
+                            <A[20] 'MCDD8621204-NB578040'>					
+						>
+					>
+				
+			>
+			>
+		"
+		}
+			],
+       		"VIDList": [{
+       			"Id": "252903450",
+       			"Name": "WaferID",
+       			"SvidValue": "WaferID",
+       			"SvidValueType": "Ascii"
+       		},
+			{
+       			"Id": "252903645",
+       			"Name": "WaferID",
+       			"SvidValue": "1",
+       			"SvidValueType": "U4"
+       		}
+			
+			],
+       		"Report": [{
+       			"Id": "9",
+       			"Value": "
+       			< L L3
+       				<U1 DATAID 129>
+       				<U2 CEID 9>
+       				< L La
+       					< L L2
+       						<U2 RPTID 8>
+       						< L Lb
+       							<A V 'MCD86A0S202-CA5CZ050'>
+       						>
+       					>
+       				>
+       			>
+       		"
+       		}
+		
+		],
+		
+	},
+	{
+		"EqpType": "AsmAd9212",
+		"StripMap":
+		{		
+		"DownloadBincode": "0000",
+		"UploadBinCode": "0001",
+		"DownloadStripmap":"",
+		"UploadStripmap":"ASM9212UploadMap.txt"
+		},		
+		"EqpActionList": [{
+			"EqpActionName": "ClearAllDateRequest",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " < L L2\r\n        <U4 DATAID 3392836>\r\n        <U4 CEID 999>\r\n        >"
+		},
+		{
+			"EqpActionName": "StripMapDownload",
+			"StreamFuncion": "S14F1",
+			"EqpActionStr": "< L L
+	<A OBJSPEC ''>
+	<A OBJTYPE 'Substrate'>
+	< L Li
+		<A OBJID 'StripID'>
+	>
+	< L Lq
+		< L L3
+			<A ATTRID 'SubstrateType'>
+			<A ATTRDATA 'Strip'>
+			<U1 ATTRRELN 0>
+		>
+	>
+	< L La
+		<A ATTRID 'MapData'>
+	>
+>"
+		},
+		{
+			"EqpActionName": "StripMapUpload",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": "< L L3
+	<U4 DATAID 700172>
+	<U4 CEID 145>
+	< L La
+		< L L2
+			<U4 RPTID 145>
+			< L Lb
+				<A V 'E142MapData'>
+			>
+		>
+	>
+>"
+		},
+		{
+			"EqpActionName": "StripMapUploadFromFile",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": "< L L3
+	<U4 DATAID 700172>
+	<U4 CEID 145>
+	< L La
+		< L L2
+			<U4 RPTID 145>
+			< L Lb
+				<A V 'E142MapData'>
+			>
+		>
+	>
+>"
+		},
+		{
+			"EqpActionName": "ProceeStart",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " < L L3
+	<U4 DATAID 697696>
+	<U4 CEID 130>
+	< L La
+		< L L2
+			<U4 RPTID 130>
+			< L Lb
+				<A V '28080310575498'>
+				<A V 'StripID'>
+				<A V ''>
+				<U4 V 0>
+				<U4 V 1>
+			>
+		>
+	>
+>"
+		},
+		{
+			"EqpActionName": "PickLogging",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": "< L L3
+	<U4 DATAID 700174>
+	<U4 CEID 132>
+	< L La
+		< L L2
+			<U4 RPTID 132>
+			< L Lb
+				<A V '28080311115170'>
+				<A V 'StripID'>
+				<A V ''>
+				<U4 V Pickup_row>
+				<U4 V Pickup_col>
+				<U2 V 0>
+				<U4 V 0>
+				<A V ''>
+				<U4 V 0>
+				<U4 V 0>
+			>
+		>
+	>
+>"
+		}],
+		"VIDList": [{
+			"Id": "10038",
+			"Name": "WaferID",
+			"SvidValue": "WaferID",
+			"SvidValueType": "Ascii"
+		}]
+	},
+	{
+		"EqpType": "LaserMarking",
+		"StripMap":
+		{		
+		"DownloadBincode": "0000",
+		"UploadBinCode": "0001",
+		"DownloadStripmap":"",
+		"UploadStripmap":"ASM9212UploadMap.txt"
+		},		
+		"EqpActionList": [{
+			"EqpActionName": "ClearAllDateRequest",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " < L L2\r\n        <U4 DATAID 3392836>\r\n        <U4 CEID 999>\r\n        >"
+		},
+		{
+			"EqpActionName": "StripMapDownload",
+			"StreamFuncion": "S14F1",
+			"EqpActionStr": "< L L
+	<A OBJSPEC ''>
+	<A OBJTYPE 'Substrate'>
+	< L Li
+		<A OBJID 'StripID'>
+	>
+	< L Lq
+		< L L3
+			<A ATTRID 'SubstrateType'>
+			<A ATTRDATA 'Strip'>
+			<U1 ATTRRELN 0>
+		>
+	>
+	< L La
+		<A ATTRID 'MapData'>
+	>
+>"
+		},
+		{
+			"EqpActionName": "UploadStripID",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": "< L L3
+	<U4 DATAID 700172>
+	<U4 CEID 107>
+	< L La
+		< L L2
+			<U4 RPTID 107>
+			< L Lb
+				<A V 'StripID'>
+			>
+		>
+	>
+>"
+		},
+		{
+			"EqpActionName": "EachStripFinished",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": "< L L3
+	<U4 DATAID 700172>
+	<U4 CEID 3000>
+	< L La
+		< L L2
+			<U4 RPTID 3000>
+			< L Lb
+				<A V 'StripID'>
+				<U2 V 0>
+			>
+		>
+	>
+>"
+		},
+		
+				{
+			"EqpActionName": "LotEnd",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": "< L L3
+	<U4 DATAID 700172>
+	<U4 CEID 106>
+	< L La
+		< L L2
+			<U4 RPTID 1006>
+			< L Lb
+				<A V 'StripID'>
+				<A V 'StripID'>
+				<A V 'StripID'>
+				<A V 'StripID'>
+			>
+		>
+	>
+>"
+		},
+		{
+			"EqpActionName": "StripMapUploadFromFile",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": "< L L3
+	<U4 DATAID 700172>
+	<U4 CEID 145>
+	< L La
+		< L L2
+			<U4 RPTID 145>
+			< L Lb
+				<A V 'E142MapData'>
+			>
+		>
+	>
+>"
+		},
+		{
+			"EqpActionName": "ProceeStart",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " < L L3
+	<U4 DATAID 697696>
+	<U4 CEID 130>
+	< L La
+		< L L2
+			<U4 RPTID 130>
+			< L Lb
+				<A V '28080310575498'>
+				<A V 'StripID'>
+				<A V ''>
+				<U4 V 0>
+				<U4 V 1>
+			>
+		>
+	>
+>"
+		},
+		{
+			"EqpActionName": "PickLogging",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": "< L L3
+	<U4 DATAID 700174>
+	<U4 CEID 132>
+	< L La
+		< L L2
+			<U4 RPTID 132>
+			< L Lb
+				<A V '28080311115170'>
+				<A V 'StripID'>
+				<A V ''>
+				<U4 V Pickup_row>
+				<U4 V Pickup_col>
+				<U2 V 0>
+				<U4 V 0>
+				<A V ''>
+				<U4 V 0>
+				<U4 V 0>
+			>
+		>
+	>
+>"
+		}],
+		"VIDList": [{
+			"Id": "10038",
+			"Name": "WaferID",
+			"SvidValue": "WaferID",
+			"SvidValueType": "Ascii"
+		},
+		{
+			"Id": "3002",
+			"Name": "ControlState",
+			"SvidValue": "5",
+			"SvidValueType": "U2"
+		},
+		{
+			"Id": "3007",
+			"Name": "Processsate",
+			"SvidValue": "1",
+			"SvidValueType": "U1"
+		},
+		{
+			"Id": "3004",
+			"Name": "Recipe",
+			"SvidValue": "3",
+			"SvidValueType": "Ascii"
+		},
+		{
+			"Id": "3030",
+			"Name": "Equipment Mode",
+			"SvidValue": "0",
+			"SvidValueType": "U1"
+		},
+		{
+			"Id": "1565",
+			"Name": "EC_StripMap_State",
+			"SvidValue": "True",
+			"SvidValueType": "Boolean"
+		},
+		{
+			"Id": "1564",
+			"Name": "EC_StripMap_Dwnld_Src",
+			"SvidValue": "1",
+			"SvidValueType": "U1"
+		},
+		{
+			"Id": "1566",
+			"Name": "EC_StripMap_Download_Mode",
+			"SvidValue": "1",
+			"SvidValueType": "U1"
+		},
+		{
+			"Id": "1571",
+			"Name": "EC_CellGrade_Mode",
+			"SvidValue": "1",
+			"SvidValueType": "U1"
+		},
+		{
+			"Id": "1572",
+			"Name": "EC_StripID_From_2D_State",
+			"SvidValue": "True",
+			"SvidValueType": "BOOLEAN"
+		},
+		{
+			"Id": "3320",
+			"Name": "StripID",
+			"SvidValue": "StripID",
+			"SvidValueType": "Ascii"
+		},
+		{
+			"Id": "3522",
+			"Name": "Bonding",
+			"SvidValue": "BondDieCount",
+			"SvidValueType": "Ascii"
+		}]
+	},
+	{
+		"EqpType": "KnsIconn",		
+		"StripMap":
+		{		
+		"DownloadBincode": "254",
+		"UploadBinCode": "251",
+		"DownloadStripmap":"",
+		"UploadStripmap":""
+		},
+		"EqpActionList": [{
+			"EqpActionName": "ClearAllDateRequest",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " < L L3\r\n        <U4 DATAID 3392836>\r\n        <U2 CEID 999>\r\n        >"
+		},
+		{
+			"EqpActionName": "StripMapDownload",
+			"StreamFuncion": "S14F1",
+		    "EqpActionStr": "< L L
+                             <A OBJSPEC ''>
+                             <A OBJTYPE 'StripMap'>
+                             < L Li
+                                 <A OBJID 'StripID'>
+                             >
+                            < L Lq
+                                < L L3
+                                    <A ATTRID ''>
+                                    <A ATTRDATA ''>
+                                    <U1 ATTRRELN >
+                                >
+                            >
+                           < L La
+                             <A ATTRID ''>
+                            >"
+		},
+		{
+			"EqpActionName": "StripMapUpload",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " < L L3
+                                <U2 DATAID 0>
+                                <U2 CEID 8336>
+                                < L La
+                                    < L L2
+                                        <U2 RPTID 1234>
+                                        < L Lb
+                                            <A V 'StripID'>
+                                            <U4 V Strip_row>
+                                            <U4 V Strip_col>
+                                            <U1 V 1>
+                                            < L V
+                                                cellstatus
+                                             >
+                                            <A V 'Lot'>
+                                            <I2 V 0>
+                                            < L V
+                                              defectcode
+                                            >
+                                         >
+                                    >
+                                >
+                             >"
+		},
+		{
+			"EqpActionName": "EqpStateChange",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+			< L L3
+                                <U2 DATAID 0>
+                                <U2 CEID 8004>
+			< L L1	
+					< L L2
+						<U2 RPTID 104>
+						< L L2							
+							<A[16] V '2018092014085500'>
+                            <U1[1] V 2>
+                            <U1[1] V 3>
+                            <A[20] 'MCDD8621204-NB578040'>					
+						>
+					>
+				
+			>
+			>
+		"
+		},
+		{
+			"EqpActionName": "EqpStateChange_RMS",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+			< L L3
+                                <U2 DATAID 0>
+                                <U2 CEID 8020>
+			< L L1	
+					< L L2
+						<U2 RPTID 6>
+						< L L2							
+							<U1 V 9>
+							<B V 7>						
+						>
+					>
+				
+			>
+			>
+		"
+		}],
+		"VIDList": [{
+			"Id": "89",
+			"Name": "WaferID",
+			"SvidValue": "WaferID",
+			"SvidValueType": "Ascii"
+		},
+		{
+			"Id": "3002",
+			"Name": "ControlState",
+			"SvidValue": "5",
+			"SvidValueType": "U2"
+		},
+		{
+			"Id": "3007",
+			"Name": "Processsate",
+			"SvidValue": "1",
+			"SvidValueType": "U1"
+		},
+		{
+			"Id": "3004",
+			"Name": "Recipe",
+			"SvidValue": "3",
+			"SvidValueType": "Ascii"
+		},
+		{
+			"Id": "3030",
+			"Name": "Equipment Mode",
+			"SvidValue": "0",
+			"SvidValueType": "U1"
+		},
+		{
+			"Id": "1565",
+			"Name": "EC_StripMap_State",
+			"SvidValue": "True",
+			"SvidValueType": "Boolean"
+		},
+		{
+			"Id": "1564",
+			"Name": "EC_StripMap_Dwnld_Src",
+			"SvidValue": "1",
+			"SvidValueType": "U1"
+		},
+		{
+			"Id": "1566",
+			"Name": "EC_StripMap_Download_Mode",
+			"SvidValue": "1",
+			"SvidValueType": "U1"
+		},
+		{
+			"Id": "1571",
+			"Name": "EC_CellGrade_Mode",
+			"SvidValue": "1",
+			"SvidValueType": "U1"
+		},
+		{
+			"Id": "1572",
+			"Name": "EC_StripID_From_2D_State",
+			"SvidValue": "True",
+			"SvidValueType": "BOOLEAN"
+		},
+		{
+			"Id": "3320",
+			"Name": "StripID",
+			"SvidValue": "StripID",
+			"SvidValueType": "Ascii"
+		},
+		{
+			"Id": "3522",
+			"Name": "Bonding",
+			"SvidValue": "BondDieCount",
+			"SvidValueType": "Ascii"
+		}
+		],
+		"Report": [{
+			"Id": "28",
+			"Value": "				
+			< L L3
+				<U1 DATAID 124>
+				<U2 CEID 28>
+				< L La
+					< L L2
+						<U2 RPTID 29>
+						< L Lb
+							<A V 'EAG005'>
+							<A V ''>
+							<A V ''>
+						>
+					>
+				>
+			>"
+		},
+		{
+			"Id": "65",
+			"Value": "
+			< L L3
+				<U1 DATAID 125>
+				<U2 CEID 65>
+				< L La
+					< L L2
+						<U2 RPTID 65>
+						< L Lb
+							<A V '7.40.42.10.17SP3'>
+							<A V '7.67'>
+							<A V 'ASEN'>
+							<A V '6.33'>
+							<A V '7.16 Rev3 Build42'>
+							<A V '3.47 (1.47)'>
+							<A V '7.10(z) 7.00(xy)'>
+							<A V '210//Rev16 202002018-07-10 16:09'>
+							<A V '2018-07-10 16:09'>
+							<A V '0'>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "22",
+			"Value": "
+			< L L3
+				<U1 DATAID 126>
+				<U2 CEID 22>
+				< L La
+					< L L2
+						<U2 RPTID 24>
+						< L Lb
+							<U2 V 1>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "6",
+			"Value": "
+			< L L3
+				<U1 DATAID 127>
+				<U2 CEID 6>
+				< L La
+					< L L2
+						<U2 RPTID 6>
+						< L Lb
+							<U2 V 28>
+							<U1 V 0>
+							<A V '2018090514485095'>
+							< L V
+							>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "20",
+			"Value": "
+			< L L3
+				<U1 DATAID 128>
+				<U2 CEID 20>
+				< L La
+					< L L2
+						<U2 RPTID 19>
+						< L Lb
+							<A V 'BLANK'>
+							<f8 V 3597>
+							<f8 V 9119354>
+							<f8 V 295933>
+							<U4 V 1>
+							<U4 V 2658267904>
+							<U4 V 1417>
+							<U4 V 0>
+							<U4 V 0>
+							<U4 V 0>
+							<U4 V 0>
+							<U4 V 0>
+							<U4 V 0>
+							<U4 V 0>
+							<U4 V 0>
+							<U4 V 0>
+							<U4 V 0>
+							<U4 V 5>
+							<U4 V 0>
+							<U4 V 12634>
+							<f4 V 1027.764>
+							<U4 V 0>
+							<A V 'BLANK'>
+						>
+					>
+					< L L2
+						<U2 RPTID 23>
+						< L Lb
+							<A V '2018090511330059'>
+							<U4 V 2105>
+							<U4 V 6>
+							<U4 V 12634>
+							<U4 V 0>
+							<U4 V 335>
+							<U4 V 12634>
+							<U4 V 345>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "9",
+			"Value": "
+			< L L3
+				<U1 DATAID 129>
+				<U2 CEID 9>
+				< L La
+					< L L2
+						<U2 RPTID 8>
+						< L Lb
+							<A V 'MCD86A0S202-CA5CZ050'>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "128",
+			"Value": "
+			< L L3
+				<U1 DATAID 130>
+				<U2 CEID 128>
+				< L La
+					< L L2
+						<U2 RPTID 128>
+						< L Lb
+							<U1 V 1>
+							<U1 V 0>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "160",
+			"Value": "
+			< L L3
+				<U1 DATAID 131>
+				<U2 CEID 160>
+				< L La
+					< L L2
+						<U2 RPTID 160>
+						< L Lb
+							<U1 V 1>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "163",
+			"Value": "
+			< L L3
+				<U1 DATAID 132>
+				<U2 CEID 163>
+				< L La
+					< L L2
+						<U2 RPTID 163>
+						< L Lb
+							<U1 V 1>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "164",
+			"Value": "
+			< L L3
+				<U1 DATAID 133>
+				<U2 CEID 164>
+				< L La
+					< L L2
+						<U2 RPTID 164>
+						< L Lb
+							<U1 V 1>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "161",
+			"Value": "
+			< L L3
+				<U1 DATAID 134>
+				<U2 CEID 161>
+				< L La
+					< L L2
+						<U2 RPTID 161>
+						< L Lb
+							<U1 V 1>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "127",
+			"Value": "
+			< L L3
+				<U1 DATAID 135>
+				<U2 CEID 127>
+				< L La
+					< L L2
+						<U2 RPTID 127>
+						< L Lb
+							<U1 V 1>
+							<U1 V 0>
+						>
+					>
+				>
+			>
+		"
+		}]
+	},
+	{
+		"EqpType": "AsmEagleXtreme",
+		"EqpBehaviors": "ClearAllDateRequest,ProceeStart,ProcessAlarm,UnitBondCompletion,StripMapDownload,StripMapUpload",
+		"StripMap":
+		{		
+		"DownloadBincode": "0",
+		"UploadBinCode": "0",
+		"DownloadStripmap":"",
+		"UploadStripmap":""
+		},
+		"EqpActionList": [{
+			"EqpActionName": "ClearAllDateRequest",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " < L L3\r\n        <U4 DATAID 3392836>\r\n        <U2 CEID 999>\r\n        >"
+		},
+		{
+			"EqpActionName": "ProceeStart",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+			< L L3
+				<U1 DATAID 158>
+				<U2 CEID 5>
+				< L La
+					< L L2
+						<U2 RPTID 3>
+						< L Lb
+							<A V '2018090321444564'>
+							<I2 V 2>
+						>
+					>
+					< L L2
+						<U2 RPTID 4>
+						< L Lb
+							<A V '2018090321444564'>
+							<I2 V 5>
+						>
+					>
+					< L L2
+						<U2 RPTID 5>
+						< L Lb
+							<I2 V 1>
+						>
+					>
+				>
+			>
+		  "
+		},
+		{
+			"EqpActionName": "ProcessAlarm",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+			< L L3
+				<U1 DATAID 247>
+				<U2 CEID 5>
+				< L La
+					< L L2
+						<U2 RPTID 3>
+						< L Lb
+							<A V '2018090322471700'>
+							<I2 V 2>
+						>
+					>
+					< L L2
+						<U2 RPTID 4>
+						< L Lb
+							<A V '2018090322471700'>
+							<I2 V 7>
+						>
+					>
+					< L L2
+						<U2 RPTID 5>
+						< L Lb
+							<I2 V 1>
+						>
+					>
+				>
+			>
+		  "
+		},
+		{
+			"EqpActionName": "UnitBondCompletion",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+			< L L3
+				<U1 DATAID 211>
+				<U2 CEID 33>
+				< L La
+					< L L2
+						<U2 RPTID 30>
+						< L Lb
+							<f8 V 2211>
+						>
+					>
+				>
+			>
+		  "
+		},
+		{
+			"EqpActionName": "StripFinish",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+			< L L3
+	<U1 DATAID 45>
+	<U2 CEID 67>
+	< L La
+		< L L2
+			<U2 RPTID 67>
+			< L Lb
+				<A V 'M783606'>
+				<I1 V 1>
+				<U1 V 3>
+				<U2 V 9>
+				<U2 V 34>
+				<U1 V 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1>
+				<U2 V 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 100 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 200 207>
+			>
+		>
+	>
+>
+		  "
+		},
+		{
+			"EqpActionName": "StripMapDownload",
+			"StreamFuncion": "S14F1",
+		"EqpActionStr": "
+			< L L
+				<A OBJSPEC ''>
+				<A OBJTYPE 'STRIPMAP'>
+				< L Li
+					<A OBJID 'StripID'>
+				>
+				< L Lq
+				>
+				< L La
+					<A ATTRID 'OriginLocation'>
+					<A ATTRID 'Rows'>
+					<A ATTRID 'Columns'>
+					<A ATTRID 'CellStatus'>
+					<A ATTRID 'DefectCode'>
+				>
+			>
+							"
+		},
+		{
+			"EqpActionName": "StripMapUpload",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+			< L L3
+				<U1 DATAID 39>
+				<U2 CEID 67>
+				< L La
+					< L L2
+						<U2 RPTID 67>
+						< L Lb
+							<A V 'StripID'>
+							<I1 V 1>
+							<U1 V 3>
+							<U2 V Strip_row>
+							<U2 V Strip_col>
+							<U1 V cellstatus>
+							<U2 V defectcode>
+						>
+					>
+				>
+			>
+		"
+		}],
+		"VIDList": [{
+			"Id": "89",
+			"Name": "WaferID",
+			"SvidValue": "WaferID",
+			"SvidValueType": "Ascii"
+		},
+		{
+			"Id": "470",
+			"Name": "StripID",
+			"SvidValue": "StripID",
+			"SvidValueType": "Ascii"
+		},
+		{
+			"Id": "281",
+			"Name": "Bonding",
+			"SvidValue": "BondDieCount",
+			"SvidValueType": "Ascii"
+		}],
+		"Report": [{
+			"Id": "28",
+			"Value": "				
+			< L L3
+				<U1 DATAID 124>
+				<U2 CEID 28>
+				< L La
+					< L L2
+						<U2 RPTID 29>
+						< L Lb
+							<A V 'EAG005'>
+							<A V ''>
+							<A V ''>
+						>
+					>
+				>
+			>"
+		},
+		{
+			"Id": "65",
+			"Value": "
+			< L L3
+				<U1 DATAID 125>
+				<U2 CEID 65>
+				< L La
+					< L L2
+						<U2 RPTID 65>
+						< L Lb
+							<A V '7.40.42.10.17SP3'>
+							<A V '7.67'>
+							<A V 'ASEN'>
+							<A V '6.33'>
+							<A V '7.16 Rev3 Build42'>
+							<A V '3.47 (1.47)'>
+							<A V '7.10(z) 7.00(xy)'>
+							<A V '210//Rev16 202002018-07-10 16:09'>
+							<A V '2018-07-10 16:09'>
+							<A V '0'>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "22",
+			"Value": "
+			< L L3
+				<U1 DATAID 126>
+				<U2 CEID 22>
+				< L La
+					< L L2
+						<U2 RPTID 24>
+						< L Lb
+							<U2 V 1>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "6",
+			"Value": "
+			< L L3
+				<U1 DATAID 127>
+				<U2 CEID 6>
+				< L La
+					< L L2
+						<U2 RPTID 6>
+						< L Lb
+							<U2 V 28>
+							<U1 V 0>
+							<A V '2018090514485095'>
+							< L V
+							>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "20",
+			"Value": "
+			< L L3
+				<U1 DATAID 128>
+				<U2 CEID 20>
+				< L La
+					< L L2
+						<U2 RPTID 19>
+						< L Lb
+							<A V 'BLANK'>
+							<f8 V 3597>
+							<f8 V 9119354>
+							<f8 V 295933>
+							<U4 V 1>
+							<U4 V 2658267904>
+							<U4 V 1417>
+							<U4 V 0>
+							<U4 V 0>
+							<U4 V 0>
+							<U4 V 0>
+							<U4 V 0>
+							<U4 V 0>
+							<U4 V 0>
+							<U4 V 0>
+							<U4 V 0>
+							<U4 V 0>
+							<U4 V 5>
+							<U4 V 0>
+							<U4 V 12634>
+							<f4 V 1027.764>
+							<U4 V 0>
+							<A V 'BLANK'>
+						>
+					>
+					< L L2
+						<U2 RPTID 23>
+						< L Lb
+							<A V '2018090511330059'>
+							<U4 V 2105>
+							<U4 V 6>
+							<U4 V 12634>
+							<U4 V 0>
+							<U4 V 335>
+							<U4 V 12634>
+							<U4 V 345>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "9",
+			"Value": "
+			< L L3
+				<U1 DATAID 129>
+				<U2 CEID 9>
+				< L La
+					< L L2
+						<U2 RPTID 8>
+						< L Lb
+							<A V 'MCD86A0S202-CA5CZ050'>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "128",
+			"Value": "
+			< L L3
+				<U1 DATAID 130>
+				<U2 CEID 128>
+				< L La
+					< L L2
+						<U2 RPTID 128>
+						< L Lb
+							<U1 V 1>
+							<U1 V 0>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "160",
+			"Value": "
+			< L L3
+				<U1 DATAID 131>
+				<U2 CEID 160>
+				< L La
+					< L L2
+						<U2 RPTID 160>
+						< L Lb
+							<U1 V 1>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "163",
+			"Value": "
+			< L L3
+				<U1 DATAID 132>
+				<U2 CEID 163>
+				< L La
+					< L L2
+						<U2 RPTID 163>
+						< L Lb
+							<U1 V 1>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "164",
+			"Value": "
+			< L L3
+				<U1 DATAID 133>
+				<U2 CEID 164>
+				< L La
+					< L L2
+						<U2 RPTID 164>
+						< L Lb
+							<U1 V 1>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "161",
+			"Value": "
+			< L L3
+				<U1 DATAID 134>
+				<U2 CEID 161>
+				< L La
+					< L L2
+						<U2 RPTID 161>
+						< L Lb
+							<U1 V 1>
+						>
+					>
+				>
+			>
+		"
+		},
+		{
+			"Id": "127",
+			"Value": "
+			< L L3
+				<U1 DATAID 135>
+				<U2 CEID 127>
+				< L La
+					< L L2
+						<U2 RPTID 127>
+						< L Lb
+							<U1 V 1>
+							<U1 V 0>
+						>
+					>
+				>
+			>
+		"
+		}]
+	},
+	{
+		"EqpType": "AsmAd830",
+		"EqpBehaviors": "ClearAllDateRequest,ProceeStart,ProcessAlarm,UnitBondCompletion,StripMapDownload,StripMapUpload",
+		"StripMap":
+		{		
+		"DownloadBincode": "254",
+		"UploadBinCode": "251",
+		"DownloadStripmap":"",
+		"UploadStripmap":""
+		},
+		"EqpActionList": [{
+			"EqpActionName": "ClearAllDateRequest",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " < L L3\r\n        <U4 DATAID 3392836>\r\n        <U2 CEID 999>\r\n        >"
+		},
+		{
+			"EqpActionName": "ProceeStart",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+			< L L3
+				<U1 DATAID 158>
+				<U2 CEID 5>
+				< L La
+					< L L2
+						<U2 RPTID 3>
+						< L Lb
+							<A V '2018090321444564'>
+							<I2 V 2>
+						>
+					>
+					< L L2
+						<U2 RPTID 4>
+						< L Lb
+							<A V '2018090321444564'>
+							<I2 V 5>
+						>
+					>
+					< L L2
+						<U2 RPTID 5>
+						< L Lb
+							<I2 V 1>
+						>
+					>
+				>
+			>
+		  "
+		},
+		{
+			"EqpActionName": "ProcessAlarm",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+			< L L3
+				<U1 DATAID 247>
+				<U2 CEID 5>
+				< L La
+					< L L2
+						<U2 RPTID 3>
+						< L Lb
+							<A V '2018090322471700'>
+							<I2 V 2>
+						>
+					>
+					< L L2
+						<U2 RPTID 4>
+						< L Lb
+							<A V '2018090322471700'>
+							<I2 V 7>
+						>
+					>
+					< L L2
+						<U2 RPTID 5>
+						< L Lb
+							<I2 V 1>
+						>
+					>
+				>
+			>
+		  "
+		},
+		{
+			"EqpActionName": "UnitBondCompletion",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+			< L L3
+				<U1 DATAID 211>
+				<U2 CEID 33>
+				< L La
+					< L L2
+						<U2 RPTID 30>
+						< L Lb
+							<f8 V 2211>
+						>
+					>
+				>
+			>
+		  "
+		},
+		{
+			"EqpActionName": "StripMapDownload",
+			"StreamFuncion": "S14F1",
+		"EqpActionStr": "
+			< L L
+				<A OBJSPEC ''>
+				<A OBJTYPE 'STRIPMAP'>
+				< L Li
+					<A OBJID 'StripID'>
+				>
+				< L Lq
+				>
+				< L La
+					<A ATTRID 'OriginLocation'>
+					<A ATTRID 'Rows'>
+					<A ATTRID 'Columns'>
+					<A ATTRID 'CellStatus'>
+					<A ATTRID 'DefectCode'>
+				>
+			>
+							"
+		},
+		{
+			"EqpActionName": "StripMapUpload",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+			< L L3
+	<U4 DATAID 2615>
+	<U4 CEID 103>
+	< L La
+		< L L2
+			<U4 RPTID 33>
+			< L Lb
+				<A V 'StripID'>
+			>
+		>
+		< L L2
+			<U4 RPTID 106>
+			< L Lb
+				<A V 'StripID'>
+				<A V 'StripMap'>
+				<U1 V >
+				<U1 V 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>
+				<U4 V 20>
+				<U4 V 201 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0>
+				<U1 V 3>
+				<U4 V 8>
+				<A V '20060821001'>
+				<U2 V 134 134 134 134 133 133 133 133 133 133 133 133 133 133 133 133 133 133 133 133 134 134 134 134 133 133 133 133 133 133 133 133 133 133 133 133 133 133 133 133 134 134 134 134 133 133 133 133 133 133 133 133 133 133 133 133 133 133 133 133 134 134 134 134 133 133 133 133 133 133 133 133 133 133 133 133 133 133 133 133 134 134 134 134 133 133 133 133 133 133 133 133 133 133 133 133 133 133 133 133 134 134 134 134 133 133 133 133 133 133 133 133 133 133 133 133 133 133 133 133 134 134 134 134 133 133 133 133 133 133 133 133 133 133 133 133 133 133 133 133 134 134 134 134 134 133 133 133 133 133 133 133 133 133 133 133 133 133 133 133>
+				<U2 V 29 28 13 12 10 11 26 27 42 43 58 59 74 75 90 91 106 107 122 123 30 27 14 11 9 12 25 28 41 44 57 60 73 76 89 92 105 108 121 124 31 26 15 10 8 13 24 29 40 45 56 61 72 77 88 93 104 109 120 125 32 25 16 9 7 14 23 30 39 46 55 62 71 78 87 94 103 110 119 126 33 24 17 8 6 15 22 31 38 47 54 63 70 79 86 95 102 111 118 127 34 23 18 7 5 16 21 32 37 48 53 64 69 80 85 96 101 112 117 128 35 22 19 6 4 17 20 33 36 49 52 65 68 81 84 97 100 113 116 129 36 21 20 5 4 18 19 34 35 50 51 66 67 82 83 98 99 114 115 130>
+				<U4 V 160>
+				<U1 V >
+			>
+		>
+	>
+>
+
+		"
+		},
+		{
+			"EqpActionName": "ReadStripId",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " < L L3
+	<U4 DATAID 2823>
+	<U4 CEID 114>
+	< L La
+		< L L2
+			<U4 RPTID 117>
+			< L Lb
+				<A V '190820003932'>
+				<A V 'StripID'>
+				<A V ''>
+				<U4 V 160>
+			>
+		>
+	>
+  >"}
+  ]  ,
+		"VIDList": [{
+			"Id": "89",
+			"Name": "WaferID",
+			"SvidValue": "WaferID",
+			"SvidValueType": "Ascii"		
+		}],
+		"Report": []
+	},
+	{
+		"EqpType": "TDKAFM1506",		
+		"StripMap":
+		{		
+		"DownloadBincode": "0A0F",
+		"UploadBinCode": "0C00",
+		"DownloadStripmap":"",
+		"UploadStripmap":"TDKAFM1506.txt"
+		},		
+		"EqpActionList": [{
+			"EqpActionName": "ClearAllDateRequest",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " < L L3\r\n        <U4 DATAID 3392836>\r\n        <U2 CEID 999>\r\n        >"
+		},
+		{
+			"EqpActionName": "PickLogging",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+           	< L L3
+               	<U4 DATAID 635>
+               	<U4 CEID 164>
+               	< L La
+               		< L L2
+               			<U4 RPTID 164>
+               			< L Lb
+               				<A V '2018092816441603'>
+               				<A V 'StripID'>
+               				<I2 V 30 1>
+               				<A V 'StripID'>
+               				<I2 V Pickup_row Pickup_col>
+               			>
+               		>
+               	>
+            >
+		  "
+		},
+		{
+			"EqpActionName": "oneStripBonding",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": ""
+		},		
+		{
+			"EqpActionName": "StripMapUploadFromFile",
+			"StreamFuncion": "S6F11",
+			"EqpActionStr": " 
+		         < L L3
+                    	<U4 DATAID 637>
+                    	<U4 CEID 180>
+                    	< L La
+                    		< L L2
+                    			<U4 RPTID 180>
+                    			< L Lb
+                    				<A V '2018092816474231'>
+                    				<A V 'E142MapData'>
+                    			>
+                    		>
+                    	>
+                    >    
+		"
+		},
+		{
+			"EqpActionName": "StripMapDownload",
+			"StreamFuncion": "S14F1",
+		"EqpActionStr": "
+			< L L
+         	<A OBJSPEC '_'>
+         	<A OBJTYPE 'Substrate'>
+         	< L Li
+         		<A OBJID 'StripID'>
+         	>
+         	< L Lq
+         		< L L3
+         			<A ATTRID 'SubstrateType'>
+         			<A ATTRDATA 'Strip'>
+         			<U1 ATTRRELN 0>
+         		>
+         	>
+         	< L La
+         	>
+                >
+             "
+       		},
+       		{
+       			"EqpActionName": "StripMapUpload",
+       			"StreamFuncion": "S6F11",
+       			"EqpActionStr": " 				
+				     < L L3
+                    	<U4 DATAID 637>
+                    	<U4 CEID 180>
+                    	< L La
+                    		< L L2
+                    			<U4 RPTID 180>
+                    			< L Lb
+                    				<A V '2018092816474231'>
+                    				<A V 'E142MapData'>
+                    			>
+                    		>
+                    	>
+                    >       			
+       		"
+       		}],
+       		"VIDList": [{
+       			"Id": "21004",
+       			"Name": "WaferID",
+       			"SvidValue": "WaferID",
+       			"SvidValueType": "Ascii"
+       		}],
+       		"Report": [{
+       			"Id": "9",
+       			"Value": "
+       			< L L3
+       				<U1 DATAID 129>
+       				<U2 CEID 9>
+       				< L La
+       					< L L2
+       						<U2 RPTID 8>
+       						< L Lb
+       							<A V 'MCD86A0S202-CA5CZ050'>
+       						>
+       					>
+       				>
+       			>
+       		"
+       		},
+       		]
+       	},
+       	],
+       	"EQPTesterInfo": {
+       		"DownloadBincode": "0001",
+       		"UploadBinCode": "0C00",
+			"DownloadBadBincode":"010F",
+       		"DownloadStripmap": "DownloadStripmap.txt",
+       		"UploadStripmap": "UploadStripmap.txt"
+       	}
+       }

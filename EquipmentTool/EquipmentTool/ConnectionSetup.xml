@@ -1,0 +1,8 @@
+﻿<Connection EQPModel="ESEC2100XP" SecsHost="Secs">
+  <EnqueueDelayTimeMs>40</EnqueueDelayTimeMs>
+  <Esec2008BoxRs232>COM1,9600,8,None,1</Esec2008BoxRs232>
+  <Esec2008BarCodeScanerRs232>COM2,9600,7,Even,1</Esec2008BarCodeScanerRs232>
+  <SecsConnection DeviceID="0" ConnectionMode="PASSIVE" NetworkAddressRemote="10.68.21.193" NetworkPortRemote="5201" NetworkAddressLocal="127.0.0.1" NetworkPortLocal="5201" />
+  <VirtualComPort EnableVirtualComPort="true" VirtualComIPLocalEsec2008BarCodeScanerRs232="127.0.0.1" VirtualComPortLocalEsec2008BarCodeScanerRs232="2012" VirtualIPLocalComEsec2008BoxRs232="127.0.0.1" VirtualComPortLocalEsec2008BoxRs232="2011" />
+  <MSMQ HostName="Plasma" ListenSubject="GUI.A2700-0001.To.HMI" SendSubject="HMI.A2700-0001.To.GUI" Network="" Service="" Daemon="" TimeoutInterval="30" RetryLimit="0" />
+</Connection>

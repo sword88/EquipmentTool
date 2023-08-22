@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.15" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+    <PackageReference Include="Prism.Wpf" Version="8.1.97" />
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Services\EquipmentTool.Services.Interfaces\EquipmentTool.Services.Interfaces.csproj" />
+    <ProjectReference Include="C:\Users\Administrator\Downloads\secs4net-base\src\Secs4Net.Json\Secs4Net.Json.csproj" />
+    <ProjectReference Include="C:\Users\Administrator\Downloads\secs4net-base\src\Secs4Net.Sml\Secs4Net.Sml.csproj" />
+    <ProjectReference Include="C:\Users\Administrator\Downloads\secs4net-base\src\Secs4Net\Secs4Net.csproj" />
+  </ItemGroup>
+</Project>

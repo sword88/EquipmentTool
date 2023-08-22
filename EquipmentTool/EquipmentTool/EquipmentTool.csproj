@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="Assets\Images\ATX.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.9.0" />
+    <PackageReference Include="Prism.DryIoc" Version="8.1.97" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EquipmentTool.Core\EquipmentTool.Core.csproj" />
+    <ProjectReference Include="..\Modules\EquipmentTool.Modules.EQPSimulator\EquipmentTool.Modules.EQPSimulator.csproj" />
+    <ProjectReference Include="..\Modules\EquipmentTool.Modules.EQPTester\EquipmentTool.Modules.EQPTester.csproj" />
+    <ProjectReference Include="..\Services\EquipmentTool.Services.Interfaces\EquipmentTool.Services.Interfaces.csproj" />
+    <ProjectReference Include="..\Services\EquipmentTool.Services\EquipmentTool.Services.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\Fonts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Assets\Images\ATX.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="ConnectionSetup.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="EqpActionsAndVids.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="log4net.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="ProcessFlows.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="StandardDefault.sml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+</Project>
